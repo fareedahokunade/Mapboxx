@@ -1,0 +1,15 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "name": "Arafura and Timor Seas"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [132.884, -11.005]
+        }
+      }
+    ]
+  }

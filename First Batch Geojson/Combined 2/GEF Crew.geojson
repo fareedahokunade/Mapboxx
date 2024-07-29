@@ -1,0 +1,18 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Caribbean Sea (LME)"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.33398,
+                    20.38583
+                ]
+            }
+        }
+    ]
+}

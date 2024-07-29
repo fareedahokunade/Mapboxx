@@ -1,0 +1,59 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ghana Basin",
+                "elevation": -89
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.07117,
+                    5.66603
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ghana Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.04461,
+                    5.686
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ghana Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.10292,
+                    5.96108
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ghana Basin",
+                "elevation": 24
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.22391,
+                    5.5408
+                ]
+            }
+        }
+    ]
+}

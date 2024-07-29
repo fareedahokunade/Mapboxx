@@ -1,0 +1,19 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.8667,
+                    37.1833
+                ]
+            },
+            "properties": {
+                "name": "Bizerte Lake",
+                "elevation": "0m asl"
+            }
+        }
+    ]
+}

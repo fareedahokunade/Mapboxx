@@ -1,0 +1,30 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    23.57245,
+                    46.06817
+                ]
+            },
+            "properties": {
+                "name": "Danube River",
+                "visibility": true,
+                "description": "GEF Romania Integrated Nutrient Pollution Control Project<p class=\"placemark-url\"><a href=\"http://old.iwlearn.net/iwlearn/iw-projects/2970/maps_graphics/project_locations/0000686581\">See the original resource</a></p>",
+                "styleUrl": "#defaultStyle",
+                "fill-opacity": 0.23529411764705882,
+                "fill": "#ff0000",
+                "stroke-opacity": 0.23529411764705882,
+                "stroke": "#ff0000",
+                "stroke-width": 2,
+                "icon-opacity": 0.23529411764705882,
+                "icon-color": "#ff0000",
+                "icon-scale": 0.7,
+                "icon": "http://old.iwlearn.net/iwlearn/img/marker.png"
+            }
+        }
+    ]
+}

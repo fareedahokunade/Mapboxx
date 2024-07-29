@@ -1,0 +1,20 @@
+.popup-content {
+    
+    margin: auto;
+    
+    border: 1px solid #888;
+    padding: 0px 0px 0.5% 0px; 
+    width: 95%; /* Adjusted width to 80% */
+    height: 100%; /* Adjusted height to 80% */
+    overflow: auto; /* Add overflow property to enable scrolling if content exceeds the height */
+    position: fixed;
+    top: 0; /* Position the popup at 50% from the top */
+  /* Position the popup at 50% from the left */
+    right: 0;
+ /* Move the popup up and left by 50% of its own size */
+    display: flex; /* Add flexbox layout */
+    flex-direction: column; /* Arrange items vertically */
+    background-image: url('https://images.nationalgeographic.org/image/upload/v1638890315/EducationHub/photos/amazon-river-basin.jpg'); /* Replace the URL with the URL of your image */
+    background-size: cover; /* Scale the image to cover the entire background */
+    background-position: center; /* Center the image */
+  }

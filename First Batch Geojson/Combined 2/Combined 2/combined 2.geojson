@@ -1,0 +1,235 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Caribbean Sea (LME)"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -72.33398,
+                    20.38583
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ghana Basin",
+                "elevation": -89
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.07117,
+                    5.66603
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ghana Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.04461,
+                    5.686
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ghana Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.10292,
+                    5.96108
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ghana Basin",
+                "elevation": 24
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -0.22391,
+                    5.5408
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Guarani Aquifer System"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            47,
+                            -12
+                        ],
+                        [
+                            65,
+                            -12
+                        ],
+                        [
+                            65,
+                            -35
+                        ],
+                        [
+                            47,
+                            -35
+                        ],
+                        [
+                            47,
+                            -12
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bosnia and Herzegovina Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.6912,
+                    45.0511
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bulgaria Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    25.9546,
+                    43.831
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Croatia Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.004,
+                    45.3271
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Czech Republic Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    17.3384,
+                    48.9703
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hungary Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.0514,
+                    47.4925
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Moldova Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.6345,
+                    46.3793
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Romania Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.1043,
+                    44.4294
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Slovenia Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.6369,
+                    45.775
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ukraine Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.6052,
+                    45.2603
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Yugoslavia (Serbia) Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    20.4476,
+                    44.8176
+                ]
+            }
+        }
+    ]
+}

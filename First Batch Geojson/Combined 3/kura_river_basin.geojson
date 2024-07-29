@@ -1,0 +1,18 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    42.76519906444574,
+                    40.67156883058258
+                ]
+            },
+            "properties": {
+                "name": "Kura River Basin"
+            }
+        }
+    ]
+}

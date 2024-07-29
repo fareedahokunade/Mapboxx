@@ -1,0 +1,325 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "AngolaSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.5,
+                    -12.5
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "BotswanaSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    24,
+                    -22
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "ComorosSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    44.3,
+                    -12.2
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Democratic Republic of the CongoSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    23.7,
+                    -2.9
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Eswatini (Swaziland)SADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    31.5,
+                    -26.5
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "LesothoSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.2,
+                    -29.6
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "MadagascarSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    47,
+                    -20
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "MalawiSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.3,
+                    -13.3
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "MauritiusSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    57.5,
+                    -20.2
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "MozambiqueSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    35,
+                    -18
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "NamibiaSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    17,
+                    -22
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "SeychellesSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    55.4,
+                    -4.6
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "South AfricaSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    25,
+                    -30
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "TanzaniaSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.8,
+                    -6.4
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "ZambiaSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.3,
+                    -13.5
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "ZimbabweSADC"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29,
+                    -19
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Amazon Basin"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -68.11929349,
+                            -16.48968911
+                        ],
+                        [
+                            -52.20060498,
+                            -3.199181017
+                        ],
+                        [
+                            -72.3775478,
+                            2.00988522
+                        ],
+                        [
+                            -79.21096703,
+                            -4.010426019
+                        ],
+                        [
+                            -59.79735974,
+                            3.357543536
+                        ],
+                        [
+                            -75.99259806,
+                            -11.15831342
+                        ],
+                        [
+                            -55.26010344,
+                            5.938337796
+                        ],
+                        [
+                            -67.18743079,
+                            2.699109107
+                        ],
+                        [
+                            -68.11929349,
+                            -16.48968911
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Arafura and Timor Seas"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    132.884,
+                    -11.005
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bay of Bengal"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            86.6395,
+                            20.6327
+                        ],
+                        [
+                            90.2155,
+                            21.9335
+                        ],
+                        [
+                            92.1312,
+                            20.4387
+                        ],
+                        [
+                            89.8562,
+                            19.0393
+                        ],
+                        [
+                            88.0825,
+                            19.1612
+                        ],
+                        [
+                            86.6395,
+                            20.6327
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bizerte Lake"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.8844,
+                    37.2333
+                ]
+            }
+        }
+    ]
+}

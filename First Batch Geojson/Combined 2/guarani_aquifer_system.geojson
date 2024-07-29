@@ -1,0 +1,38 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Guarani Aquifer System"
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            47,
+                            -12
+                        ],
+                        [
+                            65,
+                            -12
+                        ],
+                        [
+                            65,
+                            -35
+                        ],
+                        [
+                            47,
+                            -35
+                        ],
+                        [
+                            47,
+                            -12
+                        ]
+                    ]
+                ]
+            }
+        }
+    ]
+}

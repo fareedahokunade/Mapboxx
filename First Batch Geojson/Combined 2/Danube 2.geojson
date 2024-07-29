@@ -1,0 +1,135 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bosnia and Herzegovina Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.6912,
+                    45.0511
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Bulgaria Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    25.9546,
+                    43.831
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Croatia Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.004,
+                    45.3271
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Czech Republic Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    17.3384,
+                    48.9703
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Hungary Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.0514,
+                    47.4925
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Moldova Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.6345,
+                    46.3793
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Romania Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.1043,
+                    44.4294
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Slovenia Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.6369,
+                    45.775
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Ukraine Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.6052,
+                    45.2603
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "name": "Yugoslavia (Serbia) Danube Basin"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    20.4476,
+                    44.8176
+                ]
+            }
+        }
+    ]
+}

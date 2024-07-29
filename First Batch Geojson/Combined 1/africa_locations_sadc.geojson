@@ -1,0 +1,213 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.5,
+                    -12.5
+                ]
+            },
+            "properties": {
+                "name": "Angola SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    24.0,
+                    -22.0
+                ]
+            },
+            "properties": {
+                "name": "Botswana SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    44.3,
+                    -12.2
+                ]
+            },
+            "properties": {
+                "name": "Comoros SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    23.7,
+                    -2.9
+                ]
+            },
+            "properties": {
+                "name": "Democratic Republic of the Congo SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    31.5,
+                    -26.5
+                ]
+            },
+            "properties": {
+                "name": "Eswatini (Swaziland) SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.2,
+                    -29.6
+                ]
+            },
+            "properties": {
+                "name": "Lesotho SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    47.0,
+                    -20.0
+                ]
+            },
+            "properties": {
+                "name": "Madagascar SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.3,
+                    -13.3
+                ]
+            },
+            "properties": {
+                "name": "Malawi SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    57.5,
+                    -20.2
+                ]
+            },
+            "properties": {
+                "name": "Mauritius SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    35.0,
+                    -18.0
+                ]
+            },
+            "properties": {
+                "name": "Mozambique SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    17.0,
+                    -22.0
+                ]
+            },
+            "properties": {
+                "name": "Namibia SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    55.4,
+                    -4.6
+                ]
+            },
+            "properties": {
+                "name": "Seychelles SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    25.0,
+                    -30.0
+                ]
+            },
+            "properties": {
+                "name": "South Africa SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    34.8,
+                    -6.4
+                ]
+            },
+            "properties": {
+                "name": "Tanzania SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    28.3,
+                    -13.5
+                ]
+            },
+            "properties": {
+                "name": "Zambia SADC"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    29.0,
+                    -19.0
+                ]
+            },
+            "properties": {
+                "name": "Zimbabwe SADC"
+            }
+        }
+    ]
+}

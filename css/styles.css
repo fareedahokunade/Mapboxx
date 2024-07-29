@@ -1,0 +1,505 @@
+body {
+  background-image: radial-gradient(circle, #9ad3ff, #4c95cd, #3471a5,  #1d4d7e, #052c56,  #021624 );
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+   /* Set background color */
+}
+
+.logo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  /* Optional: add some margin */
+  margin: 20px;
+  display: block;
+  z-index: 99999999;
+  padding-bottom: 4%;
+  padding-right: 5%;
+}
+
+
+.header {
+  /* Add margin bottom */
+  
+  padding-top: 4%;
+  display: flex; /* Use flexbox */
+  justify-content: flex-start; /* Align items to the start (left) of the header */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: flex-start; /* Align items to the start (left) of the header */
+}
+
+.header p{
+  padding-left: 8%; 
+  font-weight: bold;
+  font-size: 23px;
+  color: white;
+  z-index: 999;
+
+}
+.main-title {
+padding-left: 8%; 
+color: rgba(255, 255, 255, 0.2); /* Set title color to blue */
+font-size: 55px; /* Set title font size */
+margin: 0; 
+z-index: 999;/* Remove default margin */
+}
+
+#popupImage {
+  position: absolute; /* Ensure it can move smoothly */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  /* Maintain aspect ratio */
+  /* Smooth transitions */
+}
+
+.slide-out-right {
+  transition: transform 0.5s ease, opacity 0.5s ease; 
+  opacity: 0; /* Fade out effect */
+}
+
+.slide-in-left {
+ transition: transform 0.5s ease, opacity 0.5s ease;
+ /* Start from the left outside of the view */
+  opacity: 1; /* Ensure the new image starts off invisible */
+}
+
+
+
+
+
+
+
+
+
+
+.modal, .videoModal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#enterMapButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #0078ff;
+  border: none;
+  cursor: pointer;
+  z-index: 1000; /* Increase z-index to ensure it's above all other content */
+
+}
+
+.custom-marker {
+  background-color: #68aac4; /* Change the background color of the marker */
+  color: #ffffff; /* Change the text color of the marker */
+  padding: 10px; 
+  margin-top: 20px;/* Add padding to the marker */
+  border-radius: 5px; /* Add border radius to create a rounded marker */
+}
+
+
+
+.main-content {
+  text-align: center; /* Center align text */
+}
+
+
+.celebrating {
+  font-size: 24px; /* Set celebrating font size */
+  margin: 0; /* Remove default margin */
+}
+
+.big-number {
+  font-size: 25px; /* Set big number font size */
+}
+.search-container {
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  height: 35%;
+  width: 13%;
+  padding-bottom: 0;
+  max-width: 40%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  
+  
+}
+#searchicon {
+  width: 100%; /* Adjust the width */
+  height: 100%; /* Adjust the height */
+
+  margin-right: 14px; /* Adjust the margin to create space between the icon and the input */
+  filter: invert(70%); /* Adjust the color of the icon */
+  /* Add any other styles you want to apply */
+}
+#backspaceicon {
+  width: 100%; /* Adjust the width */
+  height: 100%; /* Adjust the height */
+  margin-right: 15px; /* Adjust the margin to create space between the icon and the input */
+  filter: invert(70%); /* Adjust the color of the icon */
+  /* Add any other styles you want to apply */
+}
+
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-top: 10%;
+  margin-bottom: 0%; 
+  margin-left: 10%;
+  margin-right: 10%; 
+  height: 5%;
+  max-width: 90%;
+  font-size: 10px;
+  
+}
+
+.search-box input[type="text"] {
+  max-width: 80%;
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  color: white;
+  
+ 
+}
+searchButton {
+  width: 40px; /* Adjust width for the search button */
+  height: 40px; /* Adjust height for the search button */
+  background-color: #ccc;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
+.search-box button {
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  height: 100%;
+  border-radius: 40%;
+  cursor: pointer;
+}
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+.locations-list {
+  max-height: 200px; /* Set maximum height for scrollability */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-top: 10px;
+  
+}
+
+.locations-list ul {
+  list-style-type: none;
+  padding: 0;
+  
+}
+
+.locations-list li {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 8px;
+  width: 70%;
+  height: 5%;
+  text-align: left;
+  margin-top: 5%;
+  margin-bottom: 5%; 
+  margin-left: 10%;
+  margin-right: 10%; /* Adjust as needed */
+  font-size: 10px; /* Adjust as needed */
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+#locationsList li:hover {
+  background-color: #f0f0f0;
+}
+
+
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  /* Initially set opacity to 0 */
+}
+
+.next {
+width: 4%;
+aspect-ratio: 1/1;
+z-index: 5;
+position: absolute;
+top: 50.5%;
+left: 17%
+}
+
+.back {
+  width: 4%;
+  aspect-ratio: 1/1;
+  z-index: 5;
+  position: absolute;
+  top: 50.5%;
+  left: 13%
+  }
+
+.popup.active {
+/* New class to trigger the animation */
+opacity: 0;  /* Initially hidden for transition effect */
+animation: popUp 1.0s ease-in-out forwards;
+}
+
+
+@keyframes popUp {
+from {
+  
+  opacity: 0;
+   /* Optional: Start with a slight shrink */
+}
+to {
+  opacity: 1;
+  
+  /* Optional: Animate to full scale */
+  
+}
+}
+
+
+
+
+.popup-content {
+    
+  margin: auto;
+  
+  border: 1px solid #888;
+  
+  
+  padding: 0px 10px 2% 0px; 
+  width: 100%; /* Adjusted width to 80% */
+  height: 99%; /* Adjusted height to 80% */
+  overflow: hidden; /* Add overflow property to enable scrolling if content exceeds the height */
+  position: fixed;
+  top: 0; /* Position the popup at 50% from the top */
+  /* Position the popup at 50% from the left */
+  right: 0;
+  /* Move the popup up and left by 50% of its own size */
+  display: flex; /* Add flexbox layout */
+  flex-direction: column; /* Arrange items vertically */
+  background-size: cover; /* Scale the image to cover the entire background */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
+  row-gap: 17%;
+}
+
+
+
+
+@keyframes idn {
+  0%  {opacity: 1; width: 10%; height: 20%; margin-left: 7%; background: linear-gradient(to right, #fdd835 1%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 1%, rgba(0,0,0,1) 1%, rgba(0,0,0,0.8) 100%);}
+  15%  {opacity: 1; width: 15%; height: 20%; margin-left: 7%; background: linear-gradient(to right, #fdd835 1%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 1%, rgba(0,0,0,1) 1%, rgba(0,0,0,0.8) 100%);}
+  30% {opacity: 1; width: 20%; height: 20%; margin-left: 7%; background: linear-gradient(to right, #fdd835 1%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 1%, rgba(0,0,0,1) 1%, rgba(0,0,0,0.8) 100%);}
+  45% {opacity: 1; width: 30%; height: 20%; margin-left: 7%; background: linear-gradient(to right, #fdd835 1%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 1%, rgba(0,0,0,1) 1%, rgba(0,0,0,0.8) 100%);}
+  90% {opacity: 1; width: 37%; height: 20%; margin-left: 7%; background: linear-gradient(to right, #fdd835 1%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 1%, rgba(0,0,0,1) 1%, rgba(0,0,0,0.8) 100%);}
+  100% {opacity: 1; width: 39%; height: fit-content; margin-left: 7%; background: linear-gradient(to right, #fdd835 1%,rgba(0,0,0,0) 1%,rgba(0,0,0,1) 1%, rgba(0,0,0,1) 1%, rgba(0,0,0,0.8) 100%);
+    
+  } 
+}
+
+.popup-header {
+  background: #000000; /* Gradient from left to right */
+  padding-top: 0px;
+  color: #000000;
+  height: 3%;
+  /*max-height: 30%;*/
+  width: 0%;
+  margin-left: 100%;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding-left: 2%;
+  row-gap: 4vh;
+  margin-top: 2%;
+  animation: idn 1000ms ease-in-out 0ms 1 normal forwards;
+}
+
+@keyframes sho {
+  from {opacity: 0; margin-right: 20%;}
+  to {opacity: 1; margin-right: 0%;}
+}
+
+@keyframes shol {
+  from {opacity: 0; margin-left: 30%;}
+  to {opacity: 1; margin-left: 0%;}
+}
+
+.popup-header p {
+  padding-bottom: 5%;
+  /* Adjust the maximum width as needed */
+  margin: 0%; /* Add margin for better appearance */
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.descrCtn {
+  max-width: 90%;
+  opacity: 0;
+  margin-left: 30%;
+  animation: shol 1000ms ease-in-out 1000ms 1 normal forwards;
+}
+
+.popup-header h1 {
+  text-align: left;
+  max-width: 80%;
+  margin: 0%; /* Add margin for better appearance */
+  opacity: 0;
+  padding-top: 5%;
+  color: rgb(255, 255, 255); 
+  font-size: 25px;
+  margin-right: 10%;
+  animation: sho 1000ms ease-in-out 1000ms 1 normal forwards;
+  text-transform: uppercase;
+}
+
+.popup-content-inner {
+  flex: 1; /* Allow the content to grow to fill available space */
+}
+
+
+
+
+
+.popup-description {
+  margin-top: 10px;
+}
+
+
+.close {
+  display: none;
+  position: fixed; /* Change position to fixed */ /* Align to the top */
+  top: 0%;
+  left: 0.8%; /* Align to the left */
+  font-size: 40px;
+  color: rgb(255, 248, 248) ;
+  padding-top :1.5%;
+  padding-left: 0.5%;
+  cursor: pointer;
+  z-index: 999999; /* Ensure it's above the popup */
+}
+
+@keyframes dis1 {
+  from {height: 0%; opacity: 0;}
+  to {height: 93%; opacity: 1;}
+}
+
+.dashboardCtn {
+  display: flex;
+  padding-left: 4%;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 3%;
+  aspect-ratio: 1/0.5;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.dashboardsubCtn {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 0%;
+  opacity: 0;
+  justify-content: space-between;
+  align-items: center;
+  animation: dis1 2000ms ease-in-out 1000ms 1 normal forwards;
+}
+
+.switch {
+  display: flex; /* Use flexbox layout for buttons */
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-content: start;
+  justify-content: space-between; /* Distribute buttons evenly */
+  /*background: linear-gradient(to right, #052c56, rgba(5, 44, 86, 0.2));*/
+  width: 85%;
+  aspect-ratio: 1/0.49;
+
+}
+
+.subNext {
+  width: 8%;
+  aspect-ratio: 1/1;
+}
+
+.rotate {
+  transform: rotate(-270deg);
+}
+
+.dashboard-button {
+  padding: 2% 8.1%; /* Adjust button padding relative to popup size */
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  cursor: pointer;
+  margin: 0;
+ 
+}
+
+.dashboard-button:hover {
+  background-color: #ffffff;
+  color: #052c56;
+}
+
+.dashboard-button.clicked{
+  background-color: #ffffff;
+  color: #052c56;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Viewer</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --background-color: #ecf0f1;
+            --text-color: #34495e;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        h1 {
+            color: var(--secondary-color);
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        #content {
+            margin-bottom: 1.5rem;
+        }
+
+        img, video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-link {
+            display: inline-block;
+            text-decoration: none;
+            color: var(--primary-color);
+            background-color: rgba(52, 152, 219, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .loading {
+            text-align: center;
+            font-style: italic;
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="title"></h1>
+        <div id="content" class="loading"></div>
+        <p><a href="index.html" class="back-link">Back to Index</a></p>
+    </div>
+
+    <script>
+        async function loadContent() {
+            
+            const urlParams = new URLSearchParams(window.location.search);
+            const id = urlParams.get('id');
+            console.log(id)
+
+            try {
+                const response = await fetch('content.json');
+                const data = await response.json();
+
+                if (data[id]) {
+                    document.getElementById('title').textContent = data[id].title;
+                    const contentDiv = document.getElementById('content');
+                    contentDiv.classList.remove('loading');
+                    
+                    switch (data[id].type) {
+                        case 'text':
+                            contentDiv.textContent = data[id].content;
+                            break;
+                        case 'image':
+                            const img = document.createElement('img');
+                            img.src = data[id].content;
+                            img.alt = data[id].title;
+                            contentDiv.appendChild(img);
+                            break;
+                        case 'video':
+                            const video = document.createElement('video');
+                            video.src = data[id].content;
+                            video.controls = true;
+                            contentDiv.appendChild(video);
+                            break;
+                        default:
+                            contentDiv.textContent = 'Unknown content type.';
+                    }
+                } else {
+                    document.getElementById('content').textContent = 'Content not found.';
+                }
+            } catch (error) {
+                console.error('Error loading content:', error);
+                document.getElementById('content').textContent = 'Error loading content.';
+            }
+        }
+
+        loadContent();
+    </script>
+</body>
+</html>

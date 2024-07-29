@@ -1,0 +1,35 @@
+{
+    "guarani-text": {
+        "title": "Lorem ipsum dolor sit amet consectetur",
+        "type": "text",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas"
+    },
+
+    "guyana-text": {
+        "title": "Lorem ipsum dolor sit amet consectetur",
+        "type": "text",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas"
+    },
+    "guyana-image": {
+        "title": "Image Content Example",
+        "type": "image",
+        "content": "https://www.welcomeargentina.com/paseos/acuifero_guarani/esteros-del-ibera-1.jpg"
+    },
+
+    "south-text": {
+        "title": "Lorem ipsum dolor sit amet consectetur",
+        "type": "text",
+        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas"
+    },
+    "guarani-image": {
+        "title": "Image Content Example",
+        "type": "image",
+        "content": "https://www.welcomeargentina.com/paseos/acuifero_guarani/esteros-del-ibera-1.jpg"
+    },
+    "south-image": {
+        "title": "Video Content Example",
+        "type": "video",
+        "content": "https://youtu.be/O8ZrOb2Nizk"
+    }
+    
+}

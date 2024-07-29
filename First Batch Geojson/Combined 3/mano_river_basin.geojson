@@ -1,0 +1,83 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -11.503497,
+                    6.919164
+                ]
+            },
+            "properties": {
+                "name": "Mano River Basin"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -11.3,
+                            6.92
+                        ],
+                        [
+                            -11.25,
+                            7.1
+                        ],
+                        [
+                            -11.2,
+                            7.2
+                        ],
+                        [
+                            -11.1,
+                            7.25
+                        ],
+                        [
+                            -11.05,
+                            7.15
+                        ],
+                        [
+                            -11.0,
+                            7.05
+                        ],
+                        [
+                            -10.95,
+                            7.0
+                        ],
+                        [
+                            -10.9,
+                            6.9
+                        ],
+                        [
+                            -11.0,
+                            6.8
+                        ],
+                        [
+                            -11.1,
+                            6.7
+                        ],
+                        [
+                            -11.2,
+                            6.75
+                        ],
+                        [
+                            -11.3,
+                            6.85
+                        ],
+                        [
+                            -11.3,
+                            6.92
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "Mano River Basin"
+            }
+        }
+    ]
+}
