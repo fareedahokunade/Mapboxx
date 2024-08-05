@@ -193,14 +193,14 @@ $(document).ready(function () {
                     prevArrow: `
                     <button type="button" class="slick-prev">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
-                            <circle r="11" cx="12" cy="12" stroke="#fff" stroke-width="1" fill="none"/>
+                            <circle r="11" cx="12" cy="12" stroke="#fff" stroke-width="1" fill="rgb(3,3,3)"/>
                             <path d="M14 8 L10 12 L14 16" stroke="#fff" stroke-width="1" fill="none"/>
                         </svg>
                     </button>`,
                 nextArrow: `
                     <button type="button" class="slick-next">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
-                            <circle r="11" cx="12" cy="12" stroke="#fff" stroke-width="1" fill="none"/>
+                            <circle r="11" cx="12" cy="12" stroke="#fff" stroke-width="1" fill="rgb(3,3,3)"/>
                             <path d="M10 8 L14 12 L10 16" stroke="#fff" stroke-width="1" fill="none"/>
                         </svg>
                     </button>`
