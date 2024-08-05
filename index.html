@@ -7,282 +7,6 @@
   <link rel="stylesheet" href="css/styles.css">
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.css" rel="stylesheet">
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.11.0/mapbox-gl.js"></script>
-  <style>
-    @keyframes anime {
-      from {width: 48%;}
-      to {width: 0%;}
-    }
-
-    @keyframes animeb {
-      from {width: 0%;}
-      to {width: 48%;}
-    }
-
-    @keyframes animeSn {
-      from {width: 100%;}
-      to {width: 0%;}
-    }
-
-    .animes {
-      animation: anime 70ms ease-in-out 0ms 1 normal forwards;
-    }
-
-    .animesB {
-      animation: animeb 70ms ease-in-out 0ms 1 normal forwards;
-    }
-
-    .subNext {
-      width: 8%;
-      aspect-ratio: 1/1;
-    }
-
-    .subNextS {
-      width: 8%;
-      aspect-ratio: 1/1;
-      opacity: 0;
-    }
-
-    .animeSnr {
-      animation: animeSn 1000ms ease-in-out 200ms 1 none forwards;
-      display: flex; /* Use flexbox layout for buttons */
-      flex-direction: column;
-      flex-wrap: wrap;
-      overflow: hidden;
-      align-content: start;
-      justify-content: space-between; /* Distribute buttons evenly */
-      /*background: linear-gradient(to right, #052c56, rgba(5, 44, 86, 0.2));*/
-      width: 0%;
-      opacity: 0;
-    }
-
-    @keyframes slideanime {
-      from {margin-top: 30%; opacity: 0;}
-      to {margin-top: 0%; opacity: 1;}
-    }
-
-    .slideAnime {
-      width: 48%;
-      height: 100%;
-      margin-top: 30%;
-      padding-left: 5%;
-      opacity: 0;
-      padding-right: 5%;
-      box-sizing: border-box;
-      border: 2px solid white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: flex-start;
-      background-color: #fff;
-      border-radius: 0.5vw;
-      animation: slideanime 500ms ease-in-out 200ms 1 normal forwards;
-    }
-
-    @keyframes slideanime2 {
-      from {margin-top: 0%; opacity: 1;}
-      to {margin-top: 30%; opacity: 0;}
-    }
-
-    .slideAnime2 {
-      width: 48%;
-      height: 100%;
-      margin-top: 0%;
-      opacity: 1;
-      padding-left: 5%;
-      padding-right: 5%;
-      box-sizing: border-box;
-      border: 2px solid white;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: flex-start;
-      background-color: #fff;
-      border-radius: 0.5vw;
-      animation: slideanime2 1000ms ease-in-out 200ms 1 normal forwards;
-    }
-
-    .slide {
-      width: 47%;
-      height: 90%;
-      padding-left: 5%;
-      padding-right: 5%;
-      padding-bottom: 5%;
-      box-sizing: border-box;
-      border: 2px solid rgb(0, 0, 0);
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: flex-start;
-      background-color: #000000;
-      opacity: 1;
-      
-    }
-
-    .dashboard {
-      display: flex; /* Use flexbox layout for buttons */
-      flex-direction: column;
-      flex-wrap: wrap;
-      overflow: hidden;
-      align-content: center;
-      justify-content: center; /* Distribute buttons evenly */
-      /*background: linear-gradient(to right, #052c56, rgba(5, 44, 86, 0.2));*/
-      width: 100%;
-      aspect-ratio: 1/0.49;
-      column-gap: 2%;
-    }
-
-    @keyframes hd {
-      from {opacity: 0; margin-left: -10%;}
-      to {opacity: 1; margin-left: 0%;}
-    }
-
-    @keyframes hda {
-      from {opacity: 1; margin-left: 0%;}
-      to {opacity: 0; margin-left: -10%;}
-    }
-
-    .container {
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
-      height: 100vh;
-      width: 100%;
-      z-index: 5;
-      position: absolute;
-    }
-     
-    .heading {
-      font-size: 2vw;
-      color: #fff;
-      text-align: left;
-      opacity: 0;
-      margin-left: -10%;
-      animation: hd 500ms ease-in-out 0ms 1 normal forwards;
-    }
-
-    .heading1 {
-      font-size: 2vw;
-      color: #fff;
-      text-align: left;
-      opacity: 0;
-      margin-left: -10%;
-      animation: hd 500ms ease-in-out 0ms 1 normal forwards;
-    }
-
-    @keyframes hdanime {
-      from {opacity: 0; margin-top: -10%;}
-      to {opacity: 1; margin-top: 0%;}
-    }
-     
-    .headingAnime {
-      font-size: 2vw;
-      color: #fff;
-      text-align: left;
-      opacity: 0;
-      margin-top: -10%;
-      margin-left: 0%;
-      animation: hdanime 500ms ease-in-out 0ms 1 alternate forwards;
-    }
-
-    @keyframes dss1 {
-      from {height: 0%; opacity: 0;}
-      to {height: 93%; opacity: 1;}
-    }
-
-    @keyframes dssa {
-      from {height: 93%; opacity: 1;}
-      to {height: 0%; opacity: 0;}
-    }
-
-    .dashboardCtnsub {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      height: 0%;
-      opacity: 0;
-      margin-left: 0%;
-      justify-content: space-between;
-      align-items: center;
-      animation: dss1 500ms ease-in-out 0ms 1 normal forwards;
-    }
-
-    @keyframes dss2 {
-      from {margin-left: -50%; opacity: 0;}
-      to {margin-left: 0%; opacity: 1;}
-    }
-    
-    .dashboardCtnsub2 {
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      height: 93%;
-      opacity: 0;
-      margin-left: -50%;
-      justify-content: space-between;
-      align-items: center;
-      animation: dss2 500ms ease-in-out 0ms 1 normal forwards;
-    }
-
-    
-
-    .popup-headerClose {
-      color:#006caf;
-      transform-origin: right;
-      width: 40%;
-      opacity: 1;
-      align-self: flex-start;
-      height: 40%;
-      margin-left: 0px;
-      margin-right: 0px;
-      background: linear-gradient(90deg, #006caf 1.5%, #006caf 1.5%, rgba(255,255,255,0) 1.5%);
-      aspect-ratio: 1/0.4;
-      margin-top: 29%;
-      box-sizing: border-box;
-      
-    }
-
-    h1 {
-      color: var(--secondary-color);
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-
-    #content {
-      margin-bottom: 1.5rem;
-    }
-
-    img, video {
-      max-width: 100%;
-      height: auto;
-      border-radius: 4px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .back-link {
-      display: inline-block;
-      text-decoration: none;
-      color: var(--primary-color);
-      background-color: rgba(52, 152, 219, 0.1);
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      transition: all 0.3s ease;
-      color: black;
-    }
-
-    .back-link:hover {
-      background-color: var(--primary-color);
-      color: black;
-      transform: translateY(-2px);
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .loading {
-      text-align: center;
-      font-style: italic;
-      color: var(--secondary-color);
-    }
-  </style>
 </head>
 <body>
 
@@ -290,13 +14,12 @@
         <iframe src="https://www.youtube.com/embed/Juha5pi-OeQ?autoplay=1&loop=1&playlist=Juha5pi-OeQ&mute=1&controls=0&modestbranding=1&rel=0&showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         <button id="enterMapButton" onclick="closeModal()">Enter Map</button>
     </div>
-    <div class="main-content" id = "main-content">
+    <div class="main-content" id = "maincontent">
         <div class="header">
             <p class="celebrating">Celebrating <span class="big-number">30</span> years</p>
-            <h1 class="main-title">IW LEARN</h1>
-            <div id="map"></div>
-            
+            <img src="images/logo.svg" class="logo2">
         </div>
+        <div id="map"></div>
         <img src="images/footer-logos-2023-166px.png" class = "logo" alt="Logos">
 
         <div class="search-container">
@@ -335,56 +58,21 @@
             </ul>
         </div>
     </div>
+
+      <div id="myModal" class="infomodal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <iframe id="popupIframe"></iframe>
+        </div>
+    </div>
     
     
-    <div id="popup" class="popup">
-      <img id="popupImage" src="./images/Storymap BG-03.png" alt="Popup Image" />
-      <div class="next">
-        <svg viewbox="0 0 20 20">
-          <circle r="5" cx="10" cy="10" stroke="#fff" stroke-width="0.04vw"  fill-opacity="0"/>
-          <path d="M9 8 L11 10 L9 12" stroke="#fff" stroke-width="0.04vw" fill-opacity="0">
-            <animateMotion path="M-10 0 L5 0" begin="0s" dur="2s" repeatCount="indefinite" />
-          </path>
-        </svg>
-      </div>
-      <div class="back">
-        <svg viewBox="0 0 20 20">
-          <circle r="5" cx="10" cy="10" stroke="#fff" stroke-width="0.04vw" fill-opacity="0"/>
-          <path d="M11 8 L9 10 L11 12" stroke="#fff" stroke-width="0.04vw" fill-opacity="0">
-            <animateMotion path="M10 0 L-5 0" begin="0s" dur="2s" repeatCount="indefinite" />
-          </path>
-        </svg>
-      </div>
-      
-      <div class="popup-content">
-        <div class="popup-header">
-          <h1 id="popupLocationName">Location Name</h1>
-          <div class="descrCtn">
-            <p id="popupDescription" class="popup-description">Description of the location.</p>
-          </div>
-        </div>
-        <div class="dashboardCtn">
-          <div class="dashboardsubCtn">
-            <div class="switch">
-            
-            </div>
-            <div class="subNext">
-                <svg viewBox="0 0 20 20">
-                  <circle r="5" cx="10" cy="10" stroke="#fff" stroke-width="0.04vw"  fill-opacity="0"/>
-          <path d="M9 8 L11 10 L9 12" stroke="#fff" stroke-width="0.04vw" fill-opacity="0">
-                 
-                  </path>
-                </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-      <span class="close">&times;</span>
+   
+  
+     
+    
     </div>
-    </div>
-    <div id="new-page" style="display:none;">
-      <!-- New page content will be dynamically inserted here -->
-  </div>
+   
  
   <script src="js/script.js"></script>
   <script src="js/carousel.js"></script>

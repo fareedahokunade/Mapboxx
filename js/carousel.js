@@ -1,244 +1,301 @@
-const places = {
-    south: {Articles: [{no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '02',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '03',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '04',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, ], Media: [{name: 'Lorem', para: 'Lorem ipsum dolor sit'}, {name: 'Lorem', para: 'Lorem ipsum sip'}, {name: 'Lorem', para: 'Lorem ipsum sig'}, {name: 'Lorem', para: 'Lorem ipsum sim'}], Impacts: [{no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, ]},
-    guarani: {Articles: [{no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, ], Media: [{name: 'Lorem', para: 'Lorem ipsum dolor sit'}, {name: 'Lorem', para: 'Lorem ipsum sip'}, {name: 'Lorem', para: 'Lorem ipsum sig'}, {name: 'Lorem', para: 'Lorem ipsum sim'}], Impacts: [{no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, ]},
-    guyana: {Articles: [{no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, ], Media: [{name: 'Lorem', para: 'Lorem ipsum dolor sit'}, {name: 'Lorem', para: 'Lorem ipsum sip'}, {name: 'Lorem', para: 'Lorem ipsum sig'}, {name: 'Lorem', para: 'Lorem ipsum sim'}], Impacts: [{no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, {no: '01',  name: 'Lorem ipsum dolor sit amet consectetur', para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas', link: 'Read more'}, ]},
+window.addEventListener('scroll', function() {
+    let scrollPosition = window.pageYOffset;
+
    
-}
-
-const swich = document.querySelector('.switch');
-const subNxt = document.querySelector('.subNext');
-const heade = document.querySelector('.popup-header');
-const dshCtn =  document.querySelector('.dashboardCtn');
-const dshsubCtn =  document.querySelector('.dashboardsubCtn');
-//places
-const southAmericaHumboldt = document.querySelector('.SouthAmericaHumboldt');
-const guaraniAquiferSystem = document.querySelector('.GuaraniAquiferSystem');
-const guyanaBrazilBorderAmazonBasin = document.querySelector('.Guyana-BrazilBorderAmazonBasin');
-
-
-
-const loops = ['slide1', 'slide2', 'slide3', 'slide4'];
-const panel = ['Articles', 'Media', 'Impacts'];
-const prop = ['no', 'name', 'para', 'link'];
-const content = [
-    {emt: 'p', sty: 'font-size: 2vw; color: #fdd835; text-align: left;'},
-    {emt: 'p', sty: 'font-size: 1vw; color: #fff; text-align: left;'},
-    {emt: 'p', sty: 'font-size: 1vw; color: #fff; text-align: left;'},
-    {emt: 'a', sty: 'font-size: 1vw; color: #fff; text-align: left;'}
-]
-
-var heading = 0;
-
-southAmericaHumboldt.addEventListener('click', () => {
-    (dshCtn.childElementCount === 2) ? dshCtn.removeChild(dshCtn.firstElementChild) : '';
-    swich.replaceChildren();
-    setTimeout(()=>{
-        heading = dshCtn.insertAdjacentElement('afterbegin', document.createElement('p'));
-        heading.textContent = "Articles";
-        heading.classList.add('heading');
-        panel.forEach((section)=>{
-            const board = swich.appendChild(document.createElement('div'));
-            board.classList.add('dashboard');
-            loops.forEach((element, index) => {
-                const temp = board.appendChild(document.createElement('div'));
-                temp.classList.add('slide');
-                if (section === 'Articles' || section === 'Impacts') {
-                    content.forEach((cnt, idx) => {
-                        const para = temp.appendChild(document.createElement(cnt.emt));
-                        para.textContent = `${places.south[section][index][prop[idx]]}`
-                        para.style.cssText = cnt.sty;
-                        if (para.nodeName === 'A') {
-                            para.id = 'south-text';
-                            para.href = `content.html?id=${para.id}`;
-                            para.target = '_blank';
-                        }
-                    });
-                } else {
-                    temp.style.cssText = 'justify-content: flex-end; align-items: flex-end; padding-left: 0%; padding-right: 0%; height: 70%;';
-                    const divpara = temp.appendChild(document.createElement('a')); /*this*/
-                    if (divpara.nodeName === 'A') {
-                        divpara.id = 'south-image';
-                        divpara.href = `content.html?id=${divpara.id}`;
-                        divpara.target = '_blank';
-                    }
-                    divpara.style.cssText = 'display: flex; flex-direction: column; justify-content: center; padding-left: 5%; width: 50%; background: red; height: 30%;';
-                    divpara.appendChild(document.createElement('p'));
-                    divpara.appendChild(document.createElement('p'));
-                    divpara.firstElementChild.textContent = `${places.south.Media[index].name}`;
-                    divpara.firstElementChild.style.cssText = 'font-size: 1vw; color: #fff; text-align: left; margin-bottom: -0.6%;';
-                    divpara.lastElementChild.textContent = `${places.south.Media[index].para}`;
-                    divpara.lastElementChild.style.cssText = 'font-size: 0.7vw; color: #fff; text-align: left; margin-top: -0.6%;';
-                }    
-            });
-        });
-    }, 5000);
 });
 
-guyanaBrazilBorderAmazonBasin.addEventListener('click', () => {
-    (dshCtn.childElementCount === 2) ? dshCtn.removeChild(dshCtn.firstElementChild) : '';
-    swich.replaceChildren();
-    setTimeout(()=>{
-        heading = dshCtn.insertAdjacentElement('afterbegin', document.createElement('p'));
-        heading.textContent = "Articles";
-        heading.classList.add('heading');
-        panel.forEach((section)=>{
-            const board = swich.appendChild(document.createElement('div'));
-            board.classList.add('dashboard');
-            loops.forEach((element, index) => {
-                const temp = board.appendChild(document.createElement('div'));
-                temp.classList.add('slide');
-                if (section === 'Articles' || section === 'Impacts') {
-                    content.forEach((cnt, idx) => {
-                        const para = temp.appendChild(document.createElement(cnt.emt));
-                        para.textContent = `${places.guyana[section][index][prop[idx]]}`
-                        para.style.cssText = cnt.sty;
-                        if (para.nodeName === 'A') {
-                            para.id = 'guyana-text';
-                            para.href = `content.html?id=${para.id}`;
-                            para.target = '_blank';
-                        }
-                    });
-                } else {
-                    temp.style.cssText = 'justify-content: flex-end; align-items: flex-end; padding-left: 0%; padding-right: 0%; height: 70%;';
-                    const divpara = temp.appendChild(document.createElement('a')); /*this*/
-                    if (divpara.nodeName === 'A') {
-                        divpara.id = 'guyana-image';
-                        divpara.href = `content.html?id=${divpara.id}`;
-                        divpara.target = '_blank';
+$(document).ready(function () {
+
+    
+    // Fetch the JSON data
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+    let bimage;
+    let bimage2;
+    $.getJSON('content.json', function (data) {
+        var content = $('#content');
+        var pages = data[id].pages;
+
+        pages.forEach(function (page, index) {
+            if (page.type === 'text') {
+                
+                // Create the text background page
+                var textPage = $('<div>', { class: 'page', id: 'page' + (index + 1) });
+                textPage.css('background-image', 'url(' + page.background + ')');
+                var textBackground = $('<div>', { class: 'text-background' });
+                bimage = page.background2;
+                bimage2 = page.background3;
+                var title = $('<h1 class="heading">').text(page.title);
+                var paragraph = $('<p class="paragraph">').text(page.content);
+
+                // Create the overlay for project details
+                var overlay = $('<div>', { class: 'overlay' });
+                var duration = $('<h2>').text('' + page.details.duration);
+                var budget = $('<p>').text('Budget: ' + page.details.budget);
+                var countries = $('<p>').text('Participating Countries: ' + page.details.participating_countries.join(', '));
+                var agencies = $('<p>').text('Implementing Agencies: ' + page.details.implementing_agencies.join(', '));
+
+                overlay.append(duration, budget, countries, agencies);
+                textBackground.append(title, overlay);
+                textPage.append(textBackground);
+                content.append(textPage);
+
+            } else if (page.type === 'carousel') {
+                var currentIndex = 0;
+
+
+                // Create the carousel page
+                var carouselPage = $('<div>', { class: 'page', id: 'page' + (index + 1) });
+                carouselPage.css('background-image', 'url(' + bimage + ')');
+                var carouselTitle = $('<h1>', { class: 'carousel-title' }).text(page.title);
+                var carousel = $('<div>', { class: 'carousel' });
+
+                page.slides.forEach(function (slide, index) {
+                    var card = $('<div>', { class: 'card' });
+                    card.css('background-image', 'url(' + slide.image1 + ')');
+                    var img = $('<img>', { src: slide.image, alt: slide.title, class: 'card-image' });
+                    var cardTitle = $('<h2>', { class: 'card-title' }).text(slide.title);
+                    var cardContent;
+                    if (slide.title === "Challenges and Lesson Learned") {
+                        cardContent = $('<p>', { class: 'card-content' }).text('' + slide.content.join('\n\n'));
+
                     }
-                    divpara.style.cssText = 'display: flex; flex-direction: column; justify-content: center; padding-left: 5%; width: 50%; background: red; height: 30%;';
-                    divpara.appendChild(document.createElement('p'));
-                    divpara.appendChild(document.createElement('p'));
-                    divpara.firstElementChild.textContent = `${places.guyana.Media[index].name}`;
-                    divpara.firstElementChild.style.cssText = 'font-size: 1vw; color: #fff; text-align: left; margin-bottom: -0.6%;';
-                    divpara.lastElementChild.textContent = `${places.guyana.Media[index].para}`;
-                    divpara.lastElementChild.style.cssText = 'font-size: 0.7vw; color: #fff; text-align: left; margin-top: -0.6%;';
-                }    
-            });
-        });
-    }, 2000);
-});
+                    if (slide.title === "Challenges and Lesson Learned") {
+                        cardContent = $('<p>', { class: 'card-content' }).text(slide.content.join('\n\n'));
+                    } else if (slide.title === "Resources") {
+                        // Create a div to hold the content
+                        cardContent = $('<div>', { class: 'card-content' });
+
+                        // Iterate over the content list and create clickable links
+                        slide.content.forEach(function (item) {
+                            // Create a paragraph element
+                            const paragraph = $('<p>');
+
+                            // Create an anchor tag for the URL
+                            const link = $('<a>', { href: item, target: '_blank', text: item });
+
+                            // Append the link to the paragraph
+                            paragraph.append(link);
+
+                            // Append the paragraph to the content div
+                            cardContent.append(paragraph);
+                        });
+                    }
+                    else {
+                        cardContent = $('<p>', { class: 'card-content' }).text(slide.content);
+                    }
+                    var readMore = $('<span>', { class: 'read-more' }).text('Read More');
 
 
+                    card.append(img, cardTitle, cardContent, readMore);
+                    carousel.append(card);
 
-guaraniAquiferSystem.addEventListener('click', () => {
-    (dshCtn.childElementCount === 2) ? dshCtn.removeChild(dshCtn.firstElementChild) : '';
-    swich.replaceChildren();
-    setTimeout(()=>{
-        heading = dshCtn.insertAdjacentElement('afterbegin', document.createElement('p'));
-        heading.textContent = "Articles";
-        heading.classList.add('heading');
-        panel.forEach((section)=>{
-            const board = swich.appendChild(document.createElement('div'));
-            board.classList.add('dashboard');
-            loops.forEach((element, index) => {
-                const temp = board.appendChild(document.createElement('div'));
-                temp.classList.add('slide');
-                if (section === 'Articles' || section === 'Impacts') {
-                    content.forEach((cnt, idx) => {
-                        const para = temp.appendChild(document.createElement(cnt.emt));
-                        para.textContent = `${places.guarani[section][index][prop[idx]]}`
-                        para.style.cssText = cnt.sty;
-                        if (para.nodeName === 'A') {
-                            para.id = 'guarani-text';
-                            para.href = `content.html?id=${para.id}`;
-                            para.target = '_blank';
-                        }
+                    // Zoom functionality
+                    var cardZoom = $('<div>', { class: 'card-zoom' });
+                    var next = $(`
+                    <div class="next">
+                        <svg viewbox="0 0 20 20">
+                          <circle r="7" cx="10" cy="10" stroke="#fff" stroke-width="0.04vw"  fill-opacity="0"/>
+                          <path d="M9 8 L11 10 L9 12" stroke="#fff" stroke-width="0.04vw" fill-opacity="0">
+                           
+                          </path>
+                        </svg>
+                      </div>`);
+
+                    var prev = $(`
+                      <div class="prev">
+                        <svg viewBox="0 0 20 20">
+                          <circle r="7" cx="10" cy="10" stroke="#fff" stroke-width="0.04vw" fill-opacity="0"/>
+                          <path d="M11 8 L9 10 L11 12" stroke="#fff" stroke-width="0.04vw" fill-opacity="0">
+                           
+                          </path>
+                        </svg>
+                      </div>
+                    
+              `)
+                    var zoomImg = $('<img>', { src: slide.image, alt: slide.title });
+                    var zoominfo = $('<div>', { class: 'zoom-info' });
+                    var zoomTitle = $('<h2>', { class: 'card-title' }).text(slide.title);
+                    var zoomContent;
+                    if (slide.title === "Challenges and Lesson Learned") {
+                        zoomContent = $('<p>', { class: 'card-content' }).html(slide.content.join('\n\n'));
+
+                    }
+                    else {
+                        zoomContent = $('<p>', { class: 'card-content' }).text(slide.content);
+                    }
+                    var close = $('<span>', { class: 'close' }).text('✖');
+
+                    zoominfo.append(zoomTitle, zoomContent)
+
+                    cardZoom.append(close, next, prev, zoomImg, zoominfo);
+                    cardZoom.attr('data-index', index);
+
+                    $('body').append(cardZoom);
+
+                    readMore.on('click', function () {
+                        cardZoom.css('display', 'flex');
+                        currentIndex = index;
                     });
-                } else {
-                    temp.style.cssText = 'justify-content: flex-end; align-items: flex-end; padding-left: 0%; padding-right: 0%; height: 70%;';
-                    const divpara = temp.appendChild(document.createElement('a'));
-                    if (divpara.nodeName === 'A') {
-                        divpara.id = 'guarani-image';
-                        divpara.href = `content.html?id=${divpara.id}`;
-                        divpara.target = '_blank';
-                   }
-                    divpara.style.cssText = 'display: flex; flex-direction: column; justify-content: center; padding-left: 5%; width: 50%; background: red; height: 30%;';
-                    divpara.appendChild(document.createElement('p'));
-                    divpara.appendChild(document.createElement('p'));
-                    divpara.firstElementChild.textContent = `${places.guarani.Media[index].name}`;
-                    divpara.firstElementChild.style.cssText = 'font-size: 1vw; color: #fff; text-align: left; margin-bottom: -0.6%;';
-                    divpara.lastElementChild.textContent = `${places.guarani.Media[index].para}`;
-                    divpara.lastElementChild.style.cssText = 'font-size: 0.7vw; color: #fff; text-align: left; margin-top: -0.6%;';
+
+                    close.on('click', function () {
+                        cardZoom.css('display', 'none');
+                    });
+
+                    // Add functionality for next button
+                    next.on('click', function () {
+                        currentIndex = (currentIndex + 1) % page.slides.length;
+                        updateZoomContent(currentIndex);
+                    });
+
+                    // Add functionality for prev button
+                    prev.on('click', function () {
+                        currentIndex = (currentIndex - 1 + page.slides.length) % page.slides.length;
+                        updateZoomContent(currentIndex);
+                    });
+                });
+
+                // Function to update zoom content
+                function updateZoomContent(index) {
+                    var slide = page.slides[index];
+                    var cardZoom = $('[data-index="' + index + '"]');
+
+                    cardZoom.find('img').attr('src', slide.image);
+                    cardZoom.find('.card-title').text(slide.title);
+
+                    var zoomContent;
+                    if (slide.title === "Challenges and Lesson Learned") {
+                        zoomContent = slide.content.join('\n\n');
+                    } else if (slide.title === "Resources") {
+                        zoomContent = slide.content.map(function (item) {
+                            return '<p><a href="' + item + '" target="_blank">' + item + '</a></p>';
+                        }).join('');
+                    } else {
+                        zoomContent = slide.content;
+                    }
+
+                    cardZoom.find('.card-content').html(zoomContent);
+
+                    $('[data-index]').css('display', 'none');
+                    cardZoom.css('display', 'flex');
                 }
-            });
+
+
+
+                carouselPage.append(carouselTitle, carousel);
+                content.append(carouselPage);
+
+                carousel.slick({
+                    infinite: true,
+                    speed: 300,
+                    slidesToShow: 4,
+                    adaptiveHeight: true,
+                    prevArrow: `
+                    <button type="button" class="slick-prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                            <circle r="11" cx="12" cy="12" stroke="#fff" stroke-width="1" fill="none"/>
+                            <path d="M14 8 L10 12 L14 16" stroke="#fff" stroke-width="1" fill="none"/>
+                        </svg>
+                    </button>`,
+                nextArrow: `
+                    <button type="button" class="slick-next">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                            <circle r="11" cx="12" cy="12" stroke="#fff" stroke-width="1" fill="none"/>
+                            <path d="M10 8 L14 12 L10 16" stroke="#fff" stroke-width="1" fill="none"/>
+                        </svg>
+                    </button>`
+                });
+               
+                
+
+
+
+
+
+
+
+
+
+
+            } else if (page.type === 'gallery') {
+                // Create the gallery page
+                var galleryPage = $('<div>', { class: 'page gallery-page', id: 'page' + (index + 1) });
+                galleryPage.css('background-image', 'url(' + bimage2 + ')');
+                var galleryHeading = $('<h1>', { class: "gallery-heading" }).text('BROWSE OUR GALLERY');
+                var line = $('<hr>');
+                var galleryInfo = $('<p class = gallery-paragraph>').text('Explore a selection of images and videos from our collection. Use the controls to navigate through the gallery.');
+
+                var galleryContainer = $('<div>', { class: 'gallery-container' });
+                var galleryCard = $('<div>', { class: 'gallery-card' });
+                var galleryContent = $('<div>', { class: 'gallery-content' });
+
+                // Add the first card content
+                var firstSlide = page.slides[0];
+                var mediaElement;
+
+                // Determine if the content is a video or image
+                if (firstSlide.image.endsWith('.mp4')) {
+                    mediaElement = $('<video>', { class: 'gallery-media', autoplay: true, controls: true }).attr('src', firstSlide.image);
+                } else {
+                    mediaElement = $('<img>', { class: 'gallery-media' }).attr('src', firstSlide.image);
+                }
+
+                var cardTitle = $('<h2>', { class: 'gallery-card-title' }).text(firstSlide.title);
+                var cardContent = $('<p>', { class: 'gallery-card-content' }).text(firstSlide.content);
+
+                galleryCard.append(mediaElement);
+                galleryContent.append(cardTitle, cardContent);
+                galleryContainer.append(galleryCard, galleryContent);
+                galleryPage.append(galleryHeading, line, galleryInfo, galleryContainer);
+
+                // Add controls for scrolling
+                var prevButton = $(`
+                <button type="button" class="gallery-control prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                        <circle r="11" cx="12" cy="12" stroke="#fff" stroke-width="1" fill="white" border = "black"/>
+                        <path d="M14 8 L10 12 L14 16" stroke="#333" stroke-width="1" fill="none"/>
+                    </svg>
+                </button>`);
+                var nextButton = $(`<button type="button" class="gallery-control next">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="40" height="40">
+                    <circle r="11" cx="12" cy="12" stroke="#fff" stroke-width="1" fill="white"/>
+                    <path d="M10 8 L14 12 L10 16" stroke="#333" stroke-width="1" fill="none"/>
+                </svg>
+            </button>`);
+                galleryPage.append(prevButton, nextButton);
+
+                content.append(galleryPage);
+
+                // Update gallery content based on button clicks
+                var currentIndex = 0;
+                function updateGallery(index) {
+                    var slide = page.slides[index];
+                    var newMediaElement;
+
+                    // Determine if the content is a video or image
+                    if (slide.image.endsWith('.mp4')) {
+                        newMediaElement = $('<video>', { class: 'gallery-media', controls: true }).attr('src', slide.image);
+                    } else {
+                        newMediaElement = $('<img>', { class: 'gallery-media' }).attr('src', slide.image);
+                    }
+
+                    mediaElement.replaceWith(newMediaElement);
+                    mediaElement = newMediaElement; // Update the reference
+                    galleryCard.append(mediaElement); // Re-append the new media element
+                    cardTitle.text(slide.title);
+                    cardContent.text(slide.content);
+                }
+
+                nextButton.on('click', function () {
+                    currentIndex = (currentIndex + 1) % page.slides.length;
+                    updateGallery(currentIndex);
+                });
+
+                prevButton.on('click', function () {
+                    currentIndex = (currentIndex - 1 + page.slides.length) % page.slides.length;
+                    updateGallery(currentIndex);
+                });
+            }
         });
-    }, 2000);
-});
-const subNext = document.querySelector('.subNext');
-subNext.addEventListener('click', ()=>{
-    const animate = swich.firstElementChild.firstElementChild;
-    console.log(animate);
-    animate.classList.add('animes');
-    setTimeout(()=>{
-        swich.firstElementChild.appendChild(animate);
-        swich.firstElementChild.lastElementChild.classList.remove('animes');
-        swich.firstElementChild.lastElementChild.classList.add('animesB');
-    }, 200);
-    setTimeout(()=>{
-        swich.firstElementChild.removeChild();
-    }, 200);
-});
-
-
-const nxt = document.querySelector('.next');
-nxt.addEventListener('click', ()=>{
-    setTimeout(()=>{
-        heading.textContent = (heading.textContent === 'Articles') ? 'Media' : (heading.textContent === 'Media') ? 'Impacts' : 'Articles';
-    }, 300);
-    heading.style.cssText = 'font-size: 2vw; color: #fff; text-align: left; opacity: 1; margin-left: 0%; animation: hda 100ms ease-in-out 200ms 1 normal forwards;';
-    setTimeout(()=> {
-        heading.classList.remove('heading');
-        heading.classList.remove('heading1');
-        heading.style.cssText = '';
-        heading.classList.add('heading1');
-    }, 100);
-    dshsubCtn.style.cssText = 'display: flex; flex-direction: row; width: 100%; height: 93%; opacity: 1; margin-left: 0%; justify-content: space-between; align-items: center; animation: dssa 500ms ease-in-out 200ms 1 normal forwards;';
-    setTimeout(()=> {
-        dshsubCtn.classList.remove('dashboardsubCtn');
-        dshsubCtn.classList.remove('dashboardCtnsub');
-        dshsubCtn.style.cssText = '';
-        dshsubCtn.classList.add('dashboardCtnsub');
-    }, 1000);
-    setTimeout(()=>{
-        const animate = swich.firstElementChild;
-        console.log(animate);
-        animate.classList.remove('dashboard');
-        animate.classList.add('animeSnr');
-        swich.appendChild(animate);
-        swich.lastElementChild.classList.remove('animeSnr');
-        swich.lastElementChild.classList.add('dashboard');
-        swich.removeChild();
-    }, 1000);
-});
-
-const bck = document.querySelector('.back');
-bck.addEventListener('click', () => {
-    setTimeout(() => {
-        heading.textContent = (heading.textContent === 'Impacts') ? 'Media' : (heading.textContent === 'Media') ? 'Articles' : 'Impacts';
-    }, 300);
-    heading.style.cssText = 'font-size: 2vw; color: #fff; text-align: left; opacity: 1; margin-left: 0%; animation: hda 100ms ease-in-out 200ms 1 normal forwards;';
-    setTimeout(() => {
-        heading.classList.remove('heading');
-        heading.classList.remove('heading1');
-        heading.style.cssText = '';
-        heading.classList.add('heading1');
-    }, 100);
-    dshsubCtn.style.cssText = 'display: flex; flex-direction: row; width: 100%; height: 93%; opacity: 1; margin-left: 0%; justify-content: space-between; align-items: center; animation: dssa 500ms ease-in-out 200ms 1 normal forwards;';
-    setTimeout(() => {
-        dshsubCtn.classList.remove('dashboardsubCtn');
-        dshsubCtn.classList.remove('dashboardCtnsub');
-        dshsubCtn.style.cssText = '';
-        dshsubCtn.classList.add('dashboardCtnsub');
-    }, 1000);
-    setTimeout(() => {
-        const animate = swich.lastElementChild;
-        console.log(animate);
-        animate.classList.remove('dashboard');
-        animate.classList.add('animeSnr');
-        swich.insertBefore(animate, swich.firstElementChild);
-        swich.firstElementChild.classList.remove('animeSnr');
-        swich.firstElementChild.classList.add('dashboard');
-        swich.removeChild;
-    }, 1000);
+    });
 });

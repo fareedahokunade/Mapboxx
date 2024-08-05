@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+</head>
+<body>
+    <div class="controls">
+        <div class="next">
+            <svg viewbox="0 0 20 20">
+              <circle r="7" cx="10" cy="10" stroke="#fff" stroke-width="0.04vw"  fill-opacity="0"/>
+              <path d="M9 8 L11 10 L9 12" stroke="#fff" stroke-width="0.04vw" fill-opacity="0">
+                <animateMotion path="M-10 0 L5 0" begin="0s" dur="2s" repeatCount="indefinite" />
+              </path>
+            </svg>
+          </div>
+          <div class="prev">
+            <svg viewBox="0 0 20 20">
+              <circle r="7" cx="10" cy="10" stroke="#fff" stroke-width="0.04vw" fill-opacity="0"/>
+              <path d="M11 8 L9 10 L11 12" stroke="#fff" stroke-width="0.04vw" fill-opacity="0">
+                <animateMotion path="M10 0 L-5 0" begin="0s" dur="2s" repeatCount="indefinite" />
+              </path>
+            </svg>
+          </div>
+        
+    </div>
+    <div class="gallery-container">
+        <div class="gallery" id="gallery">
+            <!-- Cards will be dynamically inserted here -->
+        </div>
+        <div class="fullscreen" id="fullscreen">
+            <div class="fullscreen-content" id="fullscreen-content">
+                <button class="close-button" id="close-button">X</button>
+                
+                <!-- Content of the clicked card will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="js/gallery.js"></script>
+</body>
+</html>

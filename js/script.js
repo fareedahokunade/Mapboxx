@@ -1,18 +1,16 @@
 document.addEventListener('DOMContentLoaded', async function () {
     const searchBox = document.getElementById('searchBox');
+    var span = document.getElementsByClassName("close")[0];
     const locationsList = document.getElementById('locationsList');
+    var modal = document.getElementById("myModal");
+    var iframe = document.getElementById("popupIframe");
+    const maincontent = document.getElementById('maincontent');
     const popup = document.getElementById('popup');
-    const popupLocationName = document.getElementById('popupLocationName');
-    const popupDescription = document.getElementById('popupDescription');
     const closeButton = document.querySelector('.close');
-    let imgcount = 0;
-    const popupImage = document.getElementById('popupImage');
-    const popupContent = document.querySelector('.popup-content');
+    
     const mapp = document.getElementById('map');
     const closepop = document.getElementById('enterMapButton');
-    const dshCtn =  document.querySelector('.next');
-    const dshCtn1 =  document.querySelector('.back');
-    let bgrounds =  ["https://png.pngtree.com/thumb_back/fw800/background/20240209/pngtree-amazon-river-view-wallpapers-image_15616932.jpg","https://landofsize.com/wp-content/uploads/2018/03/istock-643123304.jpg","https://images5.alphacoders.com/680/thumb-1920-680900.jpg" ];
+    
     let map;
     mapboxgl.accessToken = 'pk.eyJ1IjoibXVpejEiLCJhIjoiY2x5azRzMmFoMDM1dTJrczIyMzFweTZwaSJ9.r14As2n7lGPLwlr3la63ew';
     map = new mapboxgl.Map({
@@ -24,9 +22,52 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     });
 
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.classList.remove('show');
+            var currentCenter = map.getCenter();
+
+     // Remove the 'show' class to start the fade-out effect
+            
+        
+                map.easeTo({
+                    center: currentCenter,
+                    zoom: 2,
+                    bearing: 30,
+                    pitch: 0,
+                    speed: 4,
+                    duration: 3000
+                });
+    
+                map.once('zoomend', function () {
+                    userInteracting = false
+                });
+           // Delay to match the CSS transition duration
+        }
+    };
+    span.onclick = function() {
+        modal.classList.remove('show'); // Remove the 'show' class to start the fade-out effect
+        var currentCenter = map.getCenter();
+            map.easeTo({
+                center: currentCenter,
+                zoom: 2,
+                bearing: 30,
+                pitch: 0,
+                speed: 4,
+                duration: 3000
+            });
+            userInteracting = false
+    
+            map.once('zoomend', function () {
+                startSpinning();
+            });
+       // Delay to match the CSS transition duration
+    };
+
+
 
     window.onload = function () {
-
+       
         document.getElementById('welcomeModal').style.display = "flex";
     };
 
@@ -159,6 +200,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
         }
     }
+
     startSpinning();
     map.on('mousedown', () => {
         userInteracting = true;
@@ -166,7 +208,6 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     // Restart spinning the globe when interaction is complete
     map.on('mouseup', () => {
-        map.
         userInteracting = false;
         startSpinning();
     });
@@ -202,6 +243,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     function closeModal() {
         document.getElementById('welcomeModal').style.display = "none";
+        maincontent.style.display = "block";
+         document.body.style.overflow = 'auto';
 
         map.easeTo({
             center: [0, 20],
@@ -253,7 +296,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 'fill-opacity': [
                     'case',
                     ['boolean', ['feature-state', 'hover'], false],
-                    1,
+                    0.4,
                     0
                 ]
             }
@@ -308,7 +351,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 map.flyTo({
                     center: coordinates,
                     zoom: 4,
-                    pitch: 45,
+                    pitch: 4,
                     bearing: 20,
                     speed: 2,
                     curve: 1,
@@ -323,7 +366,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 map.flyTo({
                     center: coordinates,
                     zoom: 2,
-                    pitch: 45,
+                    pitch: 4,
                     bearing: 20,
                     speed: 2,
                     curve: 1,
@@ -340,12 +383,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         });
     })
 
-    function openPopupWithImpactButton() {
-        stopSpinning();
-        const impactButton = document.getElementById('impactButton');
-        imgcount = 0;
-        impactButton.click();
-    }
+ 
 
     map.on('load', function () {
         // Assume your marker layer ID is 'marker-layer-id'
@@ -354,21 +392,23 @@ document.addEventListener('DOMContentLoaded', async function () {
             var coordinates = e.features[0].geometry.coordinates.slice();
             var name = e.features[0].properties.name;
             const locationDescription = locationDetails[name];
-            let classl = name.replace(/\s+/g, '');
+            let classl = name.replace(/\s+/g, ''); 
 
             // Ensure the popup appears over the clicked point
-            stopSpinning();
+            
            
             locations.forEach(location => {
                 if (location.name === name) {
                     
                 }
             });
+            userInteracting = true;
+          
 
             map.flyTo({
                 center: coordinates,
                 zoom: 6,
-                pitch: 45,
+                pitch: 4,
                 bearing: 20,
                 speed: 1,
                 curve: 1,
@@ -377,21 +417,23 @@ document.addEventListener('DOMContentLoaded', async function () {
                 },
                 essential: true
             });
-            const event = new CustomEvent('click', {
-                detail: { coordinates, name, locationDescription }
-            });
-            document.querySelector(`.${classl}`).dispatchEvent(event);
-            setTimeout(() => {
-                popup.classList.add('active');
-                popupImage.src = bgrounds[imgcount];
-                
-                popupLocationName.textContent = name
-                popupDescription.textContent = locationDescription;
-                popup.style.display = 'block';
-                closeButton.style.display = 'block';
-                closeButton.style.opacity = '1';
-                openPopupWithImpactButton();
-            }, 1000);
+            setTimeout(()=>{
+                modal.classList.add('show'); // Add the 'show' class to trigger the fade-in effect
+                iframe.src = `info.html?id=${classl}`;
+
+            }, 1000)
+            
+          
+       
+           
+
+            /* open pop-up here, you need to pass the name of the place 
+            to the pop=up as an id , and the url needs to change when the pop-up opens
+            e.g: info.html?id=Guyana-Brazil%20Border%20Amazon%20Basin
+            the id should match the name of the key in content.json
+            */
+            
+            
         });
 
     });
@@ -402,6 +444,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         let newValue = currentValue.slice(0, -1);
         searchBox.value = newValue;
     });
+
+   
 
     const locationDetails = {
         "Angola SADC": "Angola is a member of the Southern African Development Community (SADC), a regional organization aimed at promoting economic development, peace, and security in Southern Africa. Angola's diverse landscapes include savannas, tropical rainforests, and the Namib Desert in the southwest.",
@@ -464,20 +508,23 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     locationsList.addEventListener('click', function (e) {
         if (e.target.tagName === 'LI') {
-            stopSpinning();
+           
             const locationName = e.target.dataset.location;
             const locationDescription = locationDetails[locationName];
             let coordinate = [1, 2];
+            let classl = locationName.replace(/\s+/g, ''); 
             locations.forEach(location => {
                 if (location.name === locationName) {
                     coordinate = location.coordinates;
                 }
             });
+            userInteracting = true;
+           
 
             map.flyTo({
                 center: coordinate,
                 zoom: 6,
-                pitch: 45,
+                pitch: 4,
                 bearing: 20,
                 speed: 2.0,
                 curve: 1,
@@ -486,102 +533,30 @@ document.addEventListener('DOMContentLoaded', async function () {
                 },
                 essential: true
             });
-
-
-
-            setTimeout(() => {
-                popup.classList.add('active');
-                popupImage.src = bgrounds[imgcount];
-                popupLocationName.textContent = locationName;
-                popupDescription.textContent = locationDescription;
-                popup.style.display = 'block';
-                closeButton.style.display = 'block';
-                closeButton.style.opacity = '1';
-                openPopupWithImpactButton();
-            }, 1000);
-        }
-    });
-
-
-    dshCtn.addEventListener('click', function(){
-            popupImage.classList.add('slide-out-right');
-     
-        // Wait for the animation to complete before updating the image
-        setTimeout(() => {
-            imgcount = (imgcount + 1) % bgrounds.length;
-            popupImage.src = bgrounds[imgcount];
            
+            setTimeout(()=>{
+                modal.classList.add('show'); // Add the 'show' class to trigger the fade-in effect
+                iframe.src = `info.html?id=${classl}`;
 
-          popupImage.classList.remove('slide-out-right');
-          popupImage.classList.add('slide-in-left');
-          void popupImage.offsetWidth;
-          popupImage.classList.add('show');
-          setTimeout(() => {
-            
-            popupImage.classList.remove('slide-in-left', 'show');
-          }, 500); // Match this timeout with the CSS transition duration
-        }, 500);
-    })
+            }, 1300)
+          
 
-    dshCtn1.addEventListener('click', function(){
-        popupImage.classList.add('slide-out-right');
- 
-    // Wait for the animation to complete before updating the image
-    setTimeout(() => {
-        imgcount = (imgcount - 1 + bgrounds.length) % bgrounds.length;
-        popupImage.src = bgrounds[imgcount];
-       
-
-      popupImage.classList.remove('slide-out-right');
-      popupImage.classList.add('slide-in-left');
-      void popupImage.offsetWidth;
-      popupImage.classList.add('show');
-      setTimeout(() => {
-        
-        popupImage.classList.remove('slide-in-left', 'show');
-      }, 500); // Match this timeout with the CSS transition duration
-    }, 500);
-})
-
-    closeButton.addEventListener('click', function () {
+             /* open pop-up here, you need to pass the name of the place 
+            to the pop=up as an id , and the url needs to change when the pop-up opens
+            e.g: info.html?id=Guyana-Brazil%20Border%20Amazon%20Basin
+            the id should match the name of the key in content.json
+            */
 
 
-        popup.classList.remove('active');
 
-        closeButton.style.display = 'none';
-        map.easeTo({
-            center: [0, 20],
-            zoom: 2,
-            bearing: 30,
-            pitch: 0,
-            speed: 4,
-            duration: 3000
-        });
-
-        map.once('zoomend', function () {
-            startSpinning();
-        });
-    });
-
-    window.addEventListener('click', function (e) {
-        if (e.target === popup || e.target === closeButton) {
-            popup.style.display = 'none';
-            closeButton.style.display = 'none';
-
-            map.easeTo({
-                center: [0, 20],
-                zoom: 2,
-                bearing: 30,
-                pitch: 0,
-                speed: 4,
-                duration: 3000
-            });
-
-            map.once('zoomend', function () {
-                startSpinning();
-            });
+          
         }
     });
+
+
+
+   
+    
 
     searchBox.addEventListener('input', function () {
         const searchText = searchBox.value.toLowerCase();

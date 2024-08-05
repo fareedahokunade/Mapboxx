@@ -1,35 +1,94 @@
 {
-    "guarani-text": {
-        "title": "Lorem ipsum dolor sit amet consectetur",
+  "Guyana-BrazilBorderAmazonBasin": {
+    "pages": [
+      {
         "type": "text",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas"
-    },
-
-    "guyana-text": {
-        "title": "Lorem ipsum dolor sit amet consectetur",
-        "type": "text",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas"
-    },
-    "guyana-image": {
-        "title": "Image Content Example",
-        "type": "image",
-        "content": "https://www.welcomeargentina.com/paseos/acuifero_guarani/esteros-del-ibera-1.jpg"
-    },
-
-    "south-text": {
-        "title": "Lorem ipsum dolor sit amet consectetur",
-        "type": "text",
-        "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia molestiae quas"
-    },
-    "guarani-image": {
-        "title": "Image Content Example",
-        "type": "image",
-        "content": "https://www.welcomeargentina.com/paseos/acuifero_guarani/esteros-del-ibera-1.jpg"
-    },
-    "south-image": {
-        "title": "Video Content Example",
-        "type": "video",
-        "content": "https://youtu.be/O8ZrOb2Nizk"
-    }
-    
+        "background": "https://images5.alphacoders.com/680/thumb-1920-680900.jpg",
+        "background2": "images/bg2.png",
+        "background3": "images/bg2.png",
+        "title": "Guyana-Brazil Border Amazon Basin",
+        "content": "The border region between Guyana and Brazil is part of the Amazon Basin, known for its dense rainforests, rich biodiversity, and indigenous cultures. This area is critical for conservation efforts and sustainable development.",
+        "details": {
+          "duration": "2020 – 2026",
+          "budget": "GEF Allocation to project: USD 12 844 037",
+          "participating_countries": [
+            "Bolivia",
+            "Brazil",
+            "Colombia",
+            "Ecuador",
+            "Guyana",
+            "Peru",
+            "Suriname",
+            "Venezuela"
+          ],
+          "implementing_agencies": [
+            "United Nations Environment Programme"
+          ]
+        }
+      },
+      {
+        "type": "carousel",
+        "title": "EXPLORE",
+        "slides": [
+          {
+            "image": "images/bullseye.png",
+            "image1": "https://media.istockphoto.com/id/1460894232/photo/long-exposure-sunset-reflections-on-lake.webp?b=1&s=170667a&w=0&k=20&c=74-jKmr8SC1h1jeVBlq9orbesrVlK6QYQQ7m4EprL7k=",
+            "title": "Objective",
+            "content": "Implementing the Strategic Action Program (SAP), promoting Integrated Water Resources Management (IWRM) and source-to-sea approaches, to improve ecological, social and economic benefits and, enabling the countries to meet their relevant SDG and convention targets in the Amazon basin"
+          },
+          {
+            "image": "images/effort.png",
+            "image1": "https://landofsize.com/wp-content/uploads/2018/03/istock-643123304.jpg",
+            "title": "Challenges and Lesson Learned",
+            "content": [
+              "Based on the consolidated institutional structure for project execution in the Member Countries, through the 8 National Project Coordination Units, and at the regional level, with the Regional Project Coordination Unit fully established in the SP/ACTO, the Project advanced in the execution of regional and national activities with significant results.",
+              "1. At the regional level, the creation of the Amazonian Network of Water Authorities (ANWA/RADA-ACTO) laid the groundwork for the establishment of a permanent mechanism for coordination, cooperation and exchange for integrated water management in the Amazon Region. ANWA/RADA received support at the highest political level as part of the Belém Declaration signed at the IV Meeting of the Presidents of the States Parties to the Amazon Cooperation Treaty (August 8, 2023). The Declaration also channeled the agreement of the Member Countries on strengthening the institutional role of ACTO with specific mandates related to the management and monitoring of water resources, among others. In sequence, the 8 Foreign Ministers of ACTO Member Countries signed Ministerial Resolution RES/XIV MRE-ACTO/19 institutionalizing ANWA/RADA within the framework of ACTO and convening the first meeting of the Network in 2024.",
+              "2. The holding of the National SAP Implementation Workshops increased awareness, mobilization and participation of key national stakeholders in the implementation of the Strategic Action Program (SAP), reaching a new level of multi-sectoral engagement and paving the way for the formulation of the National Action Plans (NAPs) and their implementation at the national planning level and the implementation of water and environmental policies in the Amazon Basin.",
+              "3. A highlight in national capacity building was the training on gender mainstreaming in the planning and implementation of IWRM and SAP projects, programs and policies. ",
+              "4. The Project provided valuable space for technical and political dialogue between and with the countries, as more than 125 meetings were organized and held, including a CSP meeting, a high level regional meeting of Water Authorities, 3 regional technical workshops, 2 regional technical meetings with National Coordinators, 6 National SAP Workshops, 7 training courses on gender mainstreaming in IWRM projects and policies, bilateral meetings with UNCPs and National Focal Points, regular working group meetings on specific topics/interventions and coordination meetings with project partners and agencies. In total, the project has prepared terms of reference and has selected and contracted 50 consultants and institutions. The main challenge of the Project is to initiate the implementation of the remaining national activities and to advance in the implementation of the regional activities aimed at the implementation of an institutional and policy framework at the basin level for IWRM and an integrated monitoring and reporting system for water resources and the environment in the Amazon region. In general, the start of project activities has been delayed due to the prolongation of the Initial Phase and taking into account the political and institutional changes in ACTO Member Countries and the health crisis caused by Covid-19. In this regard, an extension of the project is recommended to allow for the completion and delivery of all activities and expected results."
+            ]
+          },
+          {
+            "image": "images/water.png",
+            "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLAy_kTvW2uVanGdwQZQrW5Rk6BY7VnAsKiylPWXuOV-Q7RoBti5o1bDSVAvllW9YmKGU&usqp=CAU",
+            "title": "Water Resource Impact",
+            "content": "A Permanent Regional IWRM Coordination Mechanism for the Amazon Basin was established in ACTO. 600,000,000 ha of area covered by the integrated environmental monitoring system."
+          },
+          {
+            "image": "images/financial.png",
+            "image1": "https://as2.ftcdn.net/v2/jpg/03/10/62/33/1000_F_310623324_Y19GFNUBfSxYBUrbGZjuo6P3D94sPX8n.jpg",
+            "title": "Socio-economic Impact",
+            "content": "7.5 million people (at least 40% are women) strengthened in the face of extreme hydroclimatic events (interventions). > 7.8 million people benefit from the project's activities, which corresponds to 20% of the population of the Basin (at least 40% women). Financial strategy adopted and implemented, and 8 National Action Plans developed and approved. > 1,400 trained professionals / > 10,000 members of the local communities trained (at least 40% are women)."
+          },
+          {
+            "image": "images/financial.png",
+            "image1": "https://as2.ftcdn.net/v2/jpg/03/10/62/33/1000_F_310623324_Y19GFNUBfSxYBUrbGZjuo6P3D94sPX8n.jpg",
+            "title": "Key-Challenges",
+            "content": "7.5 million people (at least 40% are women) strengthened in the face of extreme hydroclimatic events (interventions). > 7.8 million people benefit from the project's activities, which corresponds to 20% of the population of the Basin (at least 40% women). Financial strategy adopted and implemented, and 8 National Action Plans developed and approved. > 1,400 trained professionals / > 10,000 members of the local communities trained (at least 40% are women)."
+          }
+        ]
+      },
+      {
+        "type": "gallery",
+        "title": "Gallery",
+        "slides": [
+          {
+            "image": "https://landofsize.com/wp-content/uploads/2018/03/istock-643123304.jpg",
+            "title": "Gallery Image 1",
+            "content": "Description for Gallery Image 1."
+          },
+          {
+            "image": "https://images5.alphacoders.com/680/thumb-1920-680900.jpg",
+            "title": "Gallery Image 2",
+            "content": "Description for Gallery Image 2."
+          },
+          {
+            "image": "images/Anger & Rot.mp4",
+            "title": "Gallery Image 3",
+            "content": "Description for Gallery Image 3."
+          }
+        ]
+      }
+    ]
+  }
 }

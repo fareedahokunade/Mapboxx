@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    perspective: 1200px; /* Perspective for 3D effect */
+}
+
+.gallery {
+    display: flex;
+    overflow-x: auto; /* Ensure horizontal scrolling */
+    gap: 20px;
+    padding: 10px;
+    height: calc(100vh - 60px); /* Ensure height is set */
+    transform-style: preserve-3d; /* Preserve 3D transformations for children */
+}
+
+.card {
+    flex: 0 0 auto;
+    background-color: white;
+    width: 16%; /* Adjust card width */
+    height: 100%; /* Fill the height of the gallery */
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: transform 0.5s, box-shadow 0.5s;
+    transform-style: preserve-3d; /* Preserve 3D transformations */
+    position: relative;
+}
+
+.card img, .card video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.card:hover {
+    transform: rotateY(10deg) rotateX(10deg); /* Apply 3D effect on hover */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4); /* Enhanced shadow on hover */
+}
+
+/* Fullscreen Styles */
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.5s;
+}
+
+.fullscreen-content {
+    position: relative; /* Ensure proper scaling */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform 0.5s;
+    transform: scale(0); /* Start scaled down */
+}
+
+.fullscreen img, .fullscreen video {
+    width: 100%; /* Fill the container */
+    height: 100%;
+    object-fit: cover; /* Ensure content fits within the container */
+}
+
+/* Close Button Styles */
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #222; /* Darker background color for a modern feel */
+    color: #fff; /* White icon color for contrast */
+    border: none;
+    width: 50px; /* Slightly larger size for better visibility */
+    height: 50px;
+    content: '\00d7'; /* Unicode for multiplication symbol (×) */
+    font-family: 'Arial', sans-serif; /* Font for the icon */
+    font-weight: bold;
+    border-radius: 50%; /* Circular shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   /* Larger font size for the icon */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow for depth */
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    z-index: 1001; /* Ensure it is above other content */
+}
+
+/* Hover state */
+.close-button:hover {
+    background: #444; /* Slightly lighter background on hover */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+
+/* Focus state */
+.close-button:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.6); /* Focus ring for accessibility */
+}
+
+/* Using an icon instead of text (optional) */
+
+
+/* Navigation Buttons Styles */
+.controls {
+    display: none; /* Hidden by default */
+    position: absolute; /* Fix position in fullscreen */
+    top: 50%; /* Center vertically */
+    width: 100%;
+    transform: translateY(-50%); /* Adjust for exact centering */
+    z-index: 1001; /* Ensure buttons are above other content */
+}
+
+.fullscreen .controls {
+    display: flex; /* Show controls in fullscreen */
+    pointer-events: all; /* Enable pointer events for children */
+}
+
+.next {
+    position: absolute;
+    right: 5%; /* Position on the right side */
+    width: 40px; /* Set a fixed size for the button */
+    height: 40px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001; /* Ensure button is above other content */
+}
+
+.prev {
+    position: absolute;
+    left: 5%; /* Position on the left side */
+    width: 40px; /* Set a fixed size for the button */
+    height: 40px;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1001; /* Ensure button is above other content */
+}
