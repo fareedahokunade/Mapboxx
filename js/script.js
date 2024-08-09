@@ -24,20 +24,21 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     window.onclick = function (event) {
         if (event.target == modal) {
+            modal.style.opacity = '0';
             modal.classList.remove('show');
             var currentCenter = map.getCenter();
 
             // Remove the 'show' class to start the fade-out effect
-            setTimeout(()=>{
-                map.easeTo({
-                    center: currentCenter,
-                    zoom: 2,
-                    bearing: 30,
-                    pitch: 0,
-                    speed: 4,
-                    duration: 3000});
-    
-            },2000)
+
+
+            map.easeTo({
+                center: currentCenter,
+                zoom: 2,
+                bearing: 30,
+                pitch: 0,
+                speed: 4,
+                duration: 3000
+            });
 
             map.once('zoomend', function () {
                 userInteracting = false
@@ -46,19 +47,17 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     };
     span.onclick = function () {
+        modal.style.opacity = '0';
         modal.classList.remove('show'); // Remove the 'show' class to start the fade-out effect
         var currentCenter = map.getCenter();
-        setTimeout(()=>{
-            map.easeTo({
-                center: currentCenter,
-                zoom: 2,
-                bearing: 30,
-                pitch: 0,
-                speed: 4,
-                duration: 3000});
-
-        },2000)
-        
+        map.easeTo({
+            center: currentCenter,
+            zoom: 2,
+            bearing: 30,
+            pitch: 0,
+            speed: 4,
+            duration: 3000
+        });
         userInteracting = false
 
         map.once('zoomend', function () {
