@@ -373,7 +373,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 },
                 essential: true
             });
-            history.pushState(null, $(name), `info.html?id=${name}`);
+            
             setTimeout(() => {
                 modal.classList.add('show'); // Add the 'show' class to trigger the fade-in effect
                 iframe.src = `info.html?id=${classl}`;
@@ -450,11 +450,12 @@ document.addEventListener('DOMContentLoaded', async function () {
                 },
                 essential: true
             });
-            history.pushState(null, $(locationName), `info.html?id=${classl}`);
+            
 
             setTimeout(() => {
                 modal.classList.add('show'); // Add the 'show' class to trigger the fade-in effect
                 iframe.src = `info.html?id=${classl}`;
+                
 
             }, 1300)
 
