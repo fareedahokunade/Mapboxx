@@ -28,16 +28,16 @@ document.addEventListener('DOMContentLoaded', async function () {
             var currentCenter = map.getCenter();
 
             // Remove the 'show' class to start the fade-out effect
-
-
-            map.easeTo({
-                center: currentCenter,
-                zoom: 2,
-                bearing: 30,
-                pitch: 0,
-                speed: 4,
-                duration: 3000
-            });
+            setTimeout(()=>{
+                map.easeTo({
+                    center: currentCenter,
+                    zoom: 2,
+                    bearing: 30,
+                    pitch: 0,
+                    speed: 4,
+                    duration: 3000});
+    
+            },1000)
 
             map.once('zoomend', function () {
                 userInteracting = false
@@ -48,14 +48,17 @@ document.addEventListener('DOMContentLoaded', async function () {
     span.onclick = function () {
         modal.classList.remove('show'); // Remove the 'show' class to start the fade-out effect
         var currentCenter = map.getCenter();
-        map.easeTo({
-            center: currentCenter,
-            zoom: 2,
-            bearing: 30,
-            pitch: 0,
-            speed: 4,
-            duration: 3000
-        });
+        setTimeout(()=>{
+            map.easeTo({
+                center: currentCenter,
+                zoom: 2,
+                bearing: 30,
+                pitch: 0,
+                speed: 4,
+                duration: 3000});
+
+        },1000)
+        
         userInteracting = false
 
         map.once('zoomend', function () {
