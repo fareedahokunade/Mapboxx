@@ -332,8 +332,7 @@ li {
   z-index: 1000;
   /* Sit on top */
   left: 0;
-  animation: popUp 2.0s ease-in forwards;
- 
+  animation: popUp 1.0s ease-in forwards;
   top: 0;
   width: 100%;
   height: 100%;
@@ -349,9 +348,10 @@ li {
   opacity: 1;
 }
 #myModal.closeb {
-  animation:  popUp1 2.0s ease-out backwards;
-  display: none;
-  opacity: 0;
+  animation:  popUp1 1.0s ease-out backwards;
+ 
+  
+ 
 }
 
 .modal-content {
@@ -406,11 +406,13 @@ li {
   from {
 
     opacity: 1;
+    display:block
     /* Optional: Start with a slight shrink */
   }
 
   to {
     opacity: 0;
+    display:none;
 
     /* Optional: Animate to full scale */
 

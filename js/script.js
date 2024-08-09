@@ -24,24 +24,22 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     window.onclick = function (event) {
         if (event.target == modal) {
+
             modal.classList.add('closeb');
-            modal.classList.remove('show');
-            
             
             var currentCenter = map.getCenter();
 
             // Remove the 'show' class to start the fade-out effect
 
-            setTimeout(()=>{map.easeTo({
+
+            map.easeTo({
                 center: currentCenter,
                 zoom: 2,
                 bearing: 30,
                 pitch: 0,
                 speed: 4,
                 duration: 3000
-            }, 500)
-            ;})
-            
+            });
 
             map.once('zoomend', function () {
                 userInteracting = false
@@ -52,17 +50,16 @@ document.addEventListener('DOMContentLoaded', async function () {
     span.onclick = function () {
         modal.classList.add('closeb');
         modal.classList.remove('show');
-       // Remove the 'show' class to start the fade-out effect
+         // Remove the 'show' class to start the fade-out effect
         var currentCenter = map.getCenter();
-        setTimeout(()=>{map.easeTo({
+        map.easeTo({
             center: currentCenter,
             zoom: 2,
             bearing: 30,
             pitch: 0,
             speed: 4,
             duration: 3000
-        }, 500)
-        ;})
+        });
         userInteracting = false
 
         map.once('zoomend', function () {
@@ -383,8 +380,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             
             setTimeout(() => {
                 modal.classList.remove('closeb');
-                modal.classList.add('show'); 
-                // Add the 'show' class to trigger the fade-in effect
+                modal.classList.add('show'); // Add the 'show' class to trigger the fade-in effect
                 iframe.src = `info.html?id=${classl}`;
 
             }, 1000)
