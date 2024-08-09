@@ -457,7 +457,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 iframe.src = `info.html?id=${classl}`;
                 
 
-            }, 1300)
+            }, 1000)
 
 
             /* open pop-up here, you need to pass the name of the place 
