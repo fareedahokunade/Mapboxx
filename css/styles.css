@@ -344,6 +344,7 @@ li {
 
 
 #myModal.show {
+  opacity: 0;
   display: block;
   
 }
