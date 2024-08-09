@@ -379,7 +379,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             });
             
             setTimeout(() => {
-                modal.classList.add('show'); // Add the 'show' class to trigger the fade-in effect
+                modal.classList.remove('closeb');
+                modal.classList.add('show'); 
+                // Add the 'show' class to trigger the fade-in effect
                 iframe.src = `info.html?id=${classl}`;
 
             }, 1000)
@@ -457,6 +459,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             
 
             setTimeout(() => {
+                modal.classList.remove('closeb');
                 modal.classList.add('show'); // Add the 'show' class to trigger the fade-in effect
                 iframe.src = `info.html?id=${classl}`;
                 
