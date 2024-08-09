@@ -1,62 +1,95 @@
-
-
 body {
-  background-image: radial-gradient(circle, #9ad3ff, #4c95cd, #3471a5,  #1d4d7e, #052c56,  #021624 );
+  background-image: radial-gradient(circle, #9ad3ff, #4c95cd, #3471a5, #1d4d7e, #052c56, #021624);
   margin: 0;
   padding: 0;
   height: 100vh;
   font-family: Arial, sans-serif;
-   /* Set background color */
+  /* Set background color */
 }
 
 .logo {
   position: fixed;
   right: 2%;
-    width: 8%;
-    height: auto;
+  width: 8%;
+  height: auto;
   /* Optional: add some margin */
-  
+
   display: block;
   z-index: 999;
-  
+
 }
 
 .logo2 {
   position: fixed;
   top: 15%;
   left: 7%;
-  fill:black;
+  fill: black;
   width: 15%;
   height: auto;
- 
-  z-index: 99;
+
+  z-index: 999;
 }
 
 
 .header {
   /* Add margin bottom */
-  
+
   padding-top: 4%;
-  display: flex; /* Use flexbox */
-  justify-content: flex-start; /* Align items to the start (left) of the header */
-  flex-direction: column; /* Arrange items in a column */
-  align-items: flex-start; /* Align items to the start (left) of the header */
+  display: flex;
+  /* Use flexbox */
+  justify-content: flex-start;
+  /* Align items to the start (left) of the header */
+  flex-direction: column;
+  /* Arrange items in a column */
+  align-items: flex-start;
+  /* Align items to the start (left) of the header */
 }
 
-.header p{
-  padding-left: 8%; 
+
+.header p {
+  padding-left: 8%;
   font-weight: bold;
   font-size: 23px;
   color: white;
   z-index: 999;
+  font-family: 'Montserrat', sans-serif;
 
 }
+
+.footer {
+  /* Add margin bottom */
+  bottom: 10%;
+  left: 8%;
+  position: fixed;
+  display: block;
+  /* Use flexbox */
+
+  flex-direction: column;
+  /* Arrange items in a column */
+  width: 20%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer p {
+  /* Add margin bottom */
+
+  
+  font-weight:normal;
+  font-size: 12px;
+  color: white;
+  z-index: 999;
+}
+
+
 .main-title {
-padding-left: 8%; 
-color: rgba(255, 255, 255, 0.2); /* Set title color to blue */
-font-size: 55px; /* Set title font size */
-margin: 0; 
-z-index: 999;/* Remove default margin */
+  padding-left: 8%;
+  color: rgba(255, 255, 255, 0.2);
+  /* Set title color to blue */
+  font-size: 55px;
+  /* Set title font size */
+  margin: 0;
+  z-index: 999;
+  /* Remove default margin */
 }
 
 
@@ -70,24 +103,27 @@ z-index: 999;/* Remove default margin */
 
 
 
-.modal, .videoModal {
+.modal,
+.videoModal {
   display: blo;
   position: fixed;
- 
+
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   align-items: center;
   justify-content: center;
   z-index: 9999;
 }
+
 iframe {
   width: 100%;
   height: 100%;
   border: none;
 }
+
 #enterMapButton {
   position: absolute;
   top: 50%;
@@ -99,16 +135,21 @@ iframe {
   background-color: #0078ff;
   border: none;
   cursor: pointer;
-  z-index: 1000; /* Increase z-index to ensure it's above all other content */
+  z-index: 1000;
+  /* Increase z-index to ensure it's above all other content */
 
 }
 
 .custom-marker {
-  background-color: #68aac4; /* Change the background color of the marker */
-  color: #ffffff; /* Change the text color of the marker */
-  padding: 10px; 
-  margin-top: 20px;/* Add padding to the marker */
-  border-radius: 5px; /* Add border radius to create a rounded marker */
+  background-color: #68aac4;
+  /* Change the background color of the marker */
+  color: #ffffff;
+  /* Change the text color of the marker */
+  padding: 10px;
+  margin-top: 20px;
+  /* Add padding to the marker */
+  border-radius: 5px;
+  /* Add border radius to create a rounded marker */
 }
 
 
@@ -117,13 +158,17 @@ iframe {
 
 
 .celebrating {
-  font-size: 24px; /* Set celebrating font size */
-  margin: 0; /* Remove default margin */
+  font-size: 24px;
+  /* Set celebrating font size */
+  margin: 0;
+  /* Remove default margin */
 }
 
 .big-number {
-  font-size: 25px; /* Set big number font size */
+  font-size: 25px;
+  /* Set big number font size */
 }
+
 .search-container {
   position: fixed;
   top: 50%;
@@ -135,22 +180,32 @@ iframe {
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  
-  
-}
-#searchicon {
-  width: 100%; /* Adjust the width */
-  height: 100%; /* Adjust the height */
 
-  margin-right: 14px; /* Adjust the margin to create space between the icon and the input */
-  filter: invert(70%); /* Adjust the color of the icon */
+
+}
+
+#searchicon {
+  width: 100%;
+  /* Adjust the width */
+  height: 100%;
+  /* Adjust the height */
+
+  margin-right: 14px;
+  /* Adjust the margin to create space between the icon and the input */
+  filter: invert(70%);
+  /* Adjust the color of the icon */
   /* Add any other styles you want to apply */
 }
+
 #backspaceicon {
-  width: 100%; /* Adjust the width */
-  height: 100%; /* Adjust the height */
-  margin-right: 15px; /* Adjust the margin to create space between the icon and the input */
-  filter: invert(70%); /* Adjust the color of the icon */
+  width: 100%;
+  /* Adjust the width */
+  height: 100%;
+  /* Adjust the height */
+  margin-right: 15px;
+  /* Adjust the margin to create space between the icon and the input */
+  filter: invert(70%);
+  /* Adjust the color of the icon */
   /* Add any other styles you want to apply */
 }
 
@@ -162,13 +217,13 @@ iframe {
   border-radius: 10px;
   padding: 5px 10px;
   margin-top: 10%;
-  margin-bottom: 0%; 
+  margin-bottom: 0%;
   margin-left: 10%;
-  margin-right: 10%; 
+  margin-right: 10%;
   height: 5%;
   max-width: 90%;
   font-size: 10px;
-  
+
 }
 
 .search-box input[type="text"] {
@@ -177,12 +232,15 @@ iframe {
   background-color: transparent;
   font-size: 12px;
   color: white;
-  
- 
+
+
 }
+
 searchButton {
-  width: 40px; /* Adjust width for the search button */
-  height: 40px; /* Adjust height for the search button */
+  width: 40px;
+  /* Adjust width for the search button */
+  height: 40px;
+  /* Adjust height for the search button */
   background-color: #ccc;
   border: none;
   border-radius: 20px;
@@ -199,26 +257,30 @@ searchButton {
   border-radius: 40%;
   cursor: pointer;
 }
+
 #map {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  object-fit: cover; /* This ensures the map covers the area without distortion */
+  object-fit: cover;
+  /* This ensures the map covers the area without distortion */
 }
 
 .locations-list {
-  max-height: 200px; /* Set maximum height for scrollability */
-  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 200px;
+  /* Set maximum height for scrollability */
+  overflow-y: auto;
+  /* Enable vertical scrolling */
   margin-top: 10px;
-  
+
 }
 
 .locations-list ul {
   list-style-type: none;
   padding: 0;
-  
+
 }
 
 .locations-list li {
@@ -229,10 +291,12 @@ searchButton {
   height: 5%;
   text-align: left;
   margin-top: 5%;
-  margin-bottom: 5%; 
+  margin-bottom: 5%;
   margin-left: 10%;
-  margin-right: 10%; /* Adjust as needed */
-  font-size: 10px; /* Adjust as needed */
+  margin-right: 10%;
+  /* Adjust as needed */
+  font-size: 10px;
+  /* Adjust as needed */
   color: rgba(255, 255, 255, 0.6);
 }
 
@@ -247,7 +311,7 @@ searchButton {
 .container {
   width: 80%;
   margin: 0 auto;
-  
+
 }
 
 ul {
@@ -261,58 +325,75 @@ li {
 }
 
 .infomodal {
-  display: none; /* Hidden by default */
+  display: none;
+  /* Hidden by default */
   position: fixed;
   opacity: 0;
-  z-index: 1000; /* Sit on top */
+  z-index: 1000;
+  /* Sit on top */
   left: 0;
   animation: popUp 2.0s ease-in-out forwards;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Black background with opacity */
 }
+
 #myModal.show {
-  display: block; /* Show the modal */
-  opacity: 1; /* Fully visible */
+  display: block;
+  /* Show the modal */
+  opacity: 1;
+  /* Fully visible */
 }
+
 .modal-content {
-  
+
   margin: none;
- 
- 
+
+
   width: 100%;
   height: 100%;
   position: relative;
 }
+
 .close {
-    color: #aaa;
-    position: fixed;
-    left: 1%;
-    font-size: 28px;
-    font-weight: bold;
+  color: #f2f2f2;
+  position: fixed;
+  right: 1%;
+  font-weight: light;
+  top:1%;
+ 
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 50%;
+ border-color: #333;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-  
-  
-  @keyframes popUp {
+
+
+@keyframes popUp {
   from {
-    
+
     opacity: 0;
-     /* Optional: Start with a slight shrink */
+    /* Optional: Start with a slight shrink */
   }
+
   to {
     opacity: 1;
-    
+
     /* Optional: Animate to full scale */
-    
+
   }
 }

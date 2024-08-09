@@ -9,6 +9,7 @@ $(document).ready(function () {
     
     // Fetch the JSON data
     const urlParams = new URLSearchParams(window.location.search);
+   
     const id = urlParams.get('id');
     let bimage;
     let bimage2;
@@ -20,6 +21,7 @@ $(document).ready(function () {
             if (page.type === 'text') {
                 
                 // Create the text background page
+               
                 var textPage = $('<div>', { class: 'page', id: 'page' + (index + 1) });
                 textPage.css('background-image', 'url(' + page.background + ')');
                 var textBackground = $('<div>', { class: 'text-background' });
@@ -31,17 +33,20 @@ $(document).ready(function () {
                 // Create the overlay for project details
                 var overlay = $('<div>', { class: 'overlay' });
                 var duration = $('<h2>').text('' + page.details.duration);
-                var budget = $('<p>').text('Budget: ' + page.details.budget);
+               
+                var budget = $('<p>').html(page.details.budget.join('<br>'));                
                 var countries = $('<p>').text('Participating Countries: ' + page.details.participating_countries.join(', '));
                 var agencies = $('<p>').text('Implementing Agencies: ' + page.details.implementing_agencies.join(', '));
+                var executing = $('<p>').text('Executing Agencies: ' + page.details.executing_agencies.join(', '));
 
-                overlay.append(duration, budget, countries, agencies);
+                overlay.append(duration, budget, countries, agencies, executing);
                 textBackground.append(title, overlay);
                 textPage.append(textBackground);
                 content.append(textPage);
 
             } else if (page.type === 'carousel') {
                 var currentIndex = 0;
+                
 
 
                 // Create the carousel page
@@ -52,42 +57,30 @@ $(document).ready(function () {
 
                 page.slides.forEach(function (slide, index) {
                     var card = $('<div>', { class: 'card' });
+                    var cardinfo =  $('<div>', { class: 'cardinfo' });
                     card.css('background-image', 'url(' + slide.image1 + ')');
                     var img = $('<img>', { src: slide.image, alt: slide.title, class: 'card-image' });
                     var cardTitle = $('<h2>', { class: 'card-title' }).text(slide.title);
                     var cardContent;
                     if (slide.title === "Challenges and Lesson Learned") {
-                        cardContent = $('<p>', { class: 'card-content' }).text('' + slide.content.join('\n\n'));
+                        cardContent = $('<p>', { class: 'card-content' }).text('' + slide.content.join(''));
 
-                    }
-                    if (slide.title === "Challenges and Lesson Learned") {
-                        cardContent = $('<p>', { class: 'card-content' }).text(slide.content.join('\n\n'));
-                    } else if (slide.title === "Resources") {
+                    
+                    } else if (slide.title === "Key Challenges") {
                         // Create a div to hold the content
-                        cardContent = $('<div>', { class: 'card-content' });
-
-                        // Iterate over the content list and create clickable links
-                        slide.content.forEach(function (item) {
-                            // Create a paragraph element
-                            const paragraph = $('<p>');
-
-                            // Create an anchor tag for the URL
-                            const link = $('<a>', { href: item, target: '_blank', text: item });
-
-                            // Append the link to the paragraph
-                            paragraph.append(link);
-
-                            // Append the paragraph to the content div
-                            cardContent.append(paragraph);
-                        });
+                        cardContent = $('<p>', { class: 'card-content' }).text(''+ slide.content.join('\n\n'));
+                        
                     }
                     else {
                         cardContent = $('<p>', { class: 'card-content' }).text(slide.content);
                     }
-                    var readMore = $('<span>', { class: 'read-more' }).text('Read More');
+                    var readMore = $('<button>', { class: 'read-more' }).text('Read More');
 
+                    
 
-                    card.append(img, cardTitle, cardContent, readMore);
+                    cardinfo.append(cardContent, readMore);
+
+                    card.append(img, cardTitle, cardinfo);
                     carousel.append(card);
 
                     // Zoom functionality
@@ -121,6 +114,19 @@ $(document).ready(function () {
                         zoomContent = $('<p>', { class: 'card-content' }).html(slide.content.join('\n\n'));
 
                     }
+                    else if (slide.title === "Key Challenges") {
+                        zoomContent = $('<p>', { class: 'card-content' }).html(slide.content.join('\n\n'));
+
+                    }
+                    else if ( slide.title === "Water Resource Impact") {
+                        zoomContent = $('<p>', { class: 'card-content' }).html(slide.content.join('\n\n'));
+
+                    }
+                    else if ( slide.title === "Socio-economic Impact") {
+                        zoomContent = $('<p>', { class: 'card-content' }).html(slide.content.join('\n\n'));
+
+                    }
+                   
                     else {
                         zoomContent = $('<p>', { class: 'card-content' }).text(slide.content);
                     }
@@ -134,12 +140,15 @@ $(document).ready(function () {
                     $('body').append(cardZoom);
 
                     readMore.on('click', function () {
+                        cardZoom
                         cardZoom.css('display', 'flex');
+                        cardZoom.css('opacity', '1')
                         currentIndex = index;
                     });
 
                     close.on('click', function () {
                         cardZoom.css('display', 'none');
+                        
                     });
 
                     // Add functionality for next button
@@ -166,11 +175,18 @@ $(document).ready(function () {
                     var zoomContent;
                     if (slide.title === "Challenges and Lesson Learned") {
                         zoomContent = slide.content.join('\n\n');
-                    } else if (slide.title === "Resources") {
-                        zoomContent = slide.content.map(function (item) {
-                            return '<p><a href="' + item + '" target="_blank">' + item + '</a></p>';
-                        }).join('');
-                    } else {
+                    } else if (slide.title === "Key Challenges") {
+                            zoomContent = slide.content.join('\n\n');
+                            
+                 } else if (slide.title === "Water Resource Impact") {
+                        zoomContent = slide.content.join('\n\n');
+                        
+                } 
+                else if (slide.title === "Socio-economic Impact") {
+                    zoomContent = slide.content.join('\n\n');
+                    
+            } 
+                    else {
                         zoomContent = slide.content;
                     }
 
@@ -228,6 +244,10 @@ $(document).ready(function () {
                 var galleryContainer = $('<div>', { class: 'gallery-container' });
                 var galleryCard = $('<div>', { class: 'gallery-card' });
                 var galleryContent = $('<div>', { class: 'gallery-content' });
+                var further = $('<button>', { class: 'further' }).text('Further Reading');
+                further.on('click', function() {
+                    window.open(`${page['further-reading']}`, '_blank'); // Replace with your URL
+                });
 
                 // Add the first card content
                 var firstSlide = page.slides[0];
@@ -235,8 +255,22 @@ $(document).ready(function () {
 
                 // Determine if the content is a video or image
                 if (firstSlide.image.endsWith('.mp4')) {
+                    
                     mediaElement = $('<video>', { class: 'gallery-media', autoplay: true, controls: true }).attr('src', firstSlide.image);
-                } else {
+                } 
+                else if (firstSlide.image.startsWith('https')) {
+                    mediaElement = $('<iframe>', { 
+                        class: 'gallery-media', 
+                        src: firstSlide.image, 
+                        frameborder: '0', 
+                        allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
+                        allowfullscreen: true 
+                    });
+                }
+
+                
+                
+                else {
                     mediaElement = $('<img>', { class: 'gallery-media' }).attr('src', firstSlide.image);
                 }
 
@@ -262,7 +296,7 @@ $(document).ready(function () {
                     <path d="M10 8 L14 12 L10 16" stroke="#333" stroke-width="1" fill="none"/>
                 </svg>
             </button>`);
-                galleryPage.append(prevButton, nextButton);
+                galleryPage.append(prevButton, nextButton,further);
 
                 content.append(galleryPage);
 
@@ -275,7 +309,18 @@ $(document).ready(function () {
                     // Determine if the content is a video or image
                     if (slide.image.endsWith('.mp4')) {
                         newMediaElement = $('<video>', { class: 'gallery-media', controls: true }).attr('src', slide.image);
-                    } else {
+                    } 
+                    else if (slide.image.startsWith('https')) {
+                        console.log('youtube');
+                        newMediaElement = $('<iframe>', { 
+                            class: 'gallery-media', 
+                            src: slide.image, 
+                            allow: 'accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture', 
+                            allowfullscreen: true 
+                        });
+                    }
+                    
+                    else {
                         newMediaElement = $('<img>', { class: 'gallery-media' }).attr('src', slide.image);
                     }
 
@@ -296,6 +341,7 @@ $(document).ready(function () {
                     updateGallery(currentIndex);
                 });
             }
+            
         });
     });
 });

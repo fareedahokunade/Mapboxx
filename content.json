@@ -1,16 +1,16 @@
 {
-  "Guyana-BrazilBorderAmazonBasin": {
+  "Amazon": {
     "pages": [
       {
         "type": "text",
         "background": "https://images5.alphacoders.com/680/thumb-1920-680900.jpg",
         "background2": "images/bg2.png",
         "background3": "images/bg2.png",
-        "title": "Guyana-Brazil Border Amazon Basin",
+        "title": "Amazon Basin",
         "content": "The border region between Guyana and Brazil is part of the Amazon Basin, known for its dense rainforests, rich biodiversity, and indigenous cultures. This area is critical for conservation efforts and sustainable development.",
         "details": {
           "duration": "2020 – 2026",
-          "budget": "GEF Allocation to project: USD 12 844 037",
+          "budget": ["GEF Allocation to project: USD 12 844 037"],
           "participating_countries": [
             "Bolivia",
             "Brazil",
@@ -23,13 +23,22 @@
           ],
           "implementing_agencies": [
             "United Nations Environment Programme"
-          ]
+          ],
+          "executing_agencies":[ "UNDP Indonesia",
+          "UNDP Timor-Leste",
+          "PEMSEA Resource Facility"]
         }
       },
       {
         "type": "carousel",
         "title": "EXPLORE",
         "slides": [
+          {
+            "image": "images/window.png",
+            "image1": "https://media.istockphoto.com/id/1460894232/photo/long-exposure-sunset-reflections-on-lake.webp?b=1&s=170667a&w=0&k=20&c=74-jKmr8SC1h1jeVBlq9orbesrVlK6QYQQ7m4EprL7k=",
+            "title": "Overview",
+            "content": "Implementing the Strategic Action Program (SAP), promoting Integrated Water Resources Management (IWRM) and source-to-sea approaches, to improve ecological, social and economic benefits and, enabling the countries to meet their relevant SDG and convention targets in the Amazon basin"
+          },
           {
             "image": "images/bullseye.png",
             "image1": "https://media.istockphoto.com/id/1460894232/photo/long-exposure-sunset-reflections-on-lake.webp?b=1&s=170667a&w=0&k=20&c=74-jKmr8SC1h1jeVBlq9orbesrVlK6QYQQ7m4EprL7k=",
@@ -52,16 +61,16 @@
             "image": "images/water.png",
             "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLAy_kTvW2uVanGdwQZQrW5Rk6BY7VnAsKiylPWXuOV-Q7RoBti5o1bDSVAvllW9YmKGU&usqp=CAU",
             "title": "Water Resource Impact",
-            "content": "A Permanent Regional IWRM Coordination Mechanism for the Amazon Basin was established in ACTO. 600,000,000 ha of area covered by the integrated environmental monitoring system."
-          },
+            "content": ["A Permanent Regional IWRM Coordination Mechanism for the Amazon Basin was established in ACTO. 600,000,000 ha of area covered by the integrated environmental monitoring system."
+        ]},
           {
             "image": "images/financial.png",
             "image1": "https://as2.ftcdn.net/v2/jpg/03/10/62/33/1000_F_310623324_Y19GFNUBfSxYBUrbGZjuo6P3D94sPX8n.jpg",
             "title": "Socio-economic Impact",
-            "content": "7.5 million people (at least 40% are women) strengthened in the face of extreme hydroclimatic events (interventions). > 7.8 million people benefit from the project's activities, which corresponds to 20% of the population of the Basin (at least 40% women). Financial strategy adopted and implemented, and 8 National Action Plans developed and approved. > 1,400 trained professionals / > 10,000 members of the local communities trained (at least 40% are women)."
-          },
+            "content": ["7.5 million people (at least 40% are women) strengthened in the face of extreme hydroclimatic events (interventions). > 7.8 million people benefit from the project's activities, which corresponds to 20% of the population of the Basin (at least 40% women). Financial strategy adopted and implemented, and 8 National Action Plans developed and approved. > 1,400 trained professionals / > 10,000 members of the local communities trained (at least 40% are women)."
+        ]},
           {
-            "image": "images/financial.png",
+            "image": "images/bulb.png",
             "image1": "https://as2.ftcdn.net/v2/jpg/03/10/62/33/1000_F_310623324_Y19GFNUBfSxYBUrbGZjuo6P3D94sPX8n.jpg",
             "title": "Key-Challenges",
             "content": "7.5 million people (at least 40% are women) strengthened in the face of extreme hydroclimatic events (interventions). > 7.8 million people benefit from the project's activities, which corresponds to 20% of the population of the Basin (at least 40% women). Financial strategy adopted and implemented, and 8 National Action Plans developed and approved. > 1,400 trained professionals / > 10,000 members of the local communities trained (at least 40% are women)."
@@ -70,6 +79,7 @@
       },
       {
         "type": "gallery",
+        "further-reading": "https://aguasamazonicas.otca.org/?lang=em",
         "title": "Gallery",
         "slides": [
           {
@@ -86,6 +96,152 @@
             "image": "images/Anger & Rot.mp4",
             "title": "Gallery Image 3",
             "content": "Description for Gallery Image 3."
+          }
+        ]
+      }
+    ]
+  },
+  "ATSEA": {
+    "pages": [
+      {
+        "type": "text",
+        "background": "images/atsea/bg2.jpg",
+        "background2": "images/bg2.png",
+        "background3": "images/bg2.png",
+        "title": "Arafura and Timor Seas",
+         "details": {
+          "duration": "2020 – 2026",
+          "budget": ["GEF allocation to project: USD$ 9,745,662"," Total co-financing: USD$ 60,201,173 "],
+          "participating_countries": [
+            "Australia",
+            "Indonesia",
+            "Papua New Guinea",
+            "Timor-Leste" 
+          ],
+          "implementing_agencies": [
+            "United Nations Development Programme"
+          ],
+          "executing_agencies":[ "UNDP Indonesia",
+          "UNDP Timor-Leste",
+          "PEMSEA Resource Facility"]
+        }
+      },
+      {
+        "type": "carousel",
+        "title": "EXPLORE",
+        "slides": [
+          {
+            "image": "images/window.png",
+            "image1": "https://media.istockphoto.com/id/1460894232/photo/long-exposure-sunset-reflections-on-lake.webp?b=1&s=170667a&w=0&k=20&c=74-jKmr8SC1h1jeVBlq9orbesrVlK6QYQQ7m4EprL7k=",
+            "title": "Overview",
+            "content": "Implementing the Strategic Action Program (SAP), promoting Integrated Water Resources Management (IWRM) and source-to-sea approaches, to improve ecological, social and economic benefits and, enabling the countries to meet their relevant SDG and convention targets in the Amazon basin"
+          },
+          {
+            "image": "images/bullseye.png",
+            "image1": "https://media.istockphoto.com/id/1460894232/photo/long-exposure-sunset-reflections-on-lake.webp?b=1&s=170667a&w=0&k=20&c=74-jKmr8SC1h1jeVBlq9orbesrVlK6QYQQ7m4EprL7k=",
+            "title": "Objective",
+            "content": "To enhance sustainable development in the Arafura and Timor Seas (ATS) region and improve the quality of life of its inhabitants through a combination of restoration, conservation, and sustainable management of marine-coastal ecosystems. \n\n This initiative targets the conservation of ecosystem biodiversity and the integrated, sustainable management of resources. The project is divided into environmental objectives—supporting sustainable fisheries, restoring habitats, protecting marine species, reducing pollution, and adapting to climate change—and governance objectives - strengthening regional governance and supporting transboundary governance strategies that align with national priorities."
+            
+            },
+            {
+            "image": "images/effort.png",
+            "image1": "https://landofsize.com/wp-content/uploads/2018/03/istock-643123304.jpg",
+            "title": "Challenges and Lesson Learned",
+            "content": [
+              "Adaptability to External Challenges",
+              "The ATSEA-2 project faced significant disruptions from COVID-19, natural disasters, and political changes, affecting schedules, safety protocols, and resource allocation. To mitigate these issues in the future, efforts should be made to enhance flexibility in project planning, improve disaster preparedness, and adapt to political landscapes through regular engagement with government agencies and stakeholders.",
+              "Resource Management and Accessibility",
+              "Remote project locations with limited access and facilities posed logistical challenges, and budget management issues arose from unused allocations and financial mismatches. To address these challenges, it is essential to prioritise robust financial management, including proactive budget adjustments and reallocations. Additionally, extending outreach and infrastructure support to remote areas will ensure more effective project implementation."
+            ,"Communication and Coordination Efficiency <br>",
+            "Difficulties in scheduling, language barriers and a lack of experience in reporting compromised effective communication and documentation.  Accordingly, it is recommended to implement advanced notification systems for meetings, utilise hybrid formats to accommodate diverse schedules, and enhance support for local partners in reporting to improve documentation quality."
+
+            ]
+          },
+          {
+            "image": "images/water.png",
+            "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLAy_kTvW2uVanGdwQZQrW5Rk6BY7VnAsKiylPWXuOV-Q7RoBti5o1bDSVAvllW9YmKGU&usqp=CAU",
+            "title": "Water Resource Impact",
+            "content":[ "Policy and Regional Plans",
+
+            "The project successfully implemented a regional Marine Protected Area (MPA) Network Design and a Sea Turtles Regional Action Plan, both of which were endorsed by the four ATS countries. Additionally, it produced a Regional Ecosystem Approach to Fisheries Management (EAFM) Plan for Red Snapper fisheries, which was developed and endorsed by the participating countries. A Climate Change Guide for Facilitators and Decision Makers was also written and endorsed by the four ATS countries.",
+            
+            "Marine Protected Areas",
+            
+            "ATSEA-2 supported improvements in MPA management effectiveness across the region, including in Southeast Aru MPA, Indonesia (114,000 ha), and Nino Konis Santana National Park, Timor-Leste (123,600 ha). It also facilitated the establishment of a new MPA in Kolepom, Indonesia, covering a total of 526,986 hectares, including Kolepom Island MPA and the mangrove area of Dolok Island Wildlife Reserve. Additionally, the project supported the establishment process of a new MPA in Manufahi-Manatuto, Timor-Leste, projected to cover approximately 51,000 hectares.",
+            
+            "Local Regulation",
+            
+            "The project supported the issuance of 11 local regulations, including 8 in Indonesia, 1 in Papua New Guinea, and 2 in Timor-Leste. These regulations were developed to support Integrated Coastal Management, pollution management, MPA establishment, and efforts to combat Illegal, Unreported, and Unregulated fishing.",
+            
+            "Ecosystem Approach to Fisheries Management ",
+            
+            "ATSEA-2 facilitated the development of five EAFM plans: three for Indonesia (focused on Red Snapper, Shrimp, and Barramundi), one for Timor-Leste's South Coast, and one community-based plan for South Fly, Papua New Guinea. EAFM was implemented across a 25,097 km² area, encompassing regions in Indonesia, Timor-Leste, and Papua New Guinea."
+            
+          ]
+          },
+          {
+            "image": "images/financial.png",
+            "image1": "https://as2.ftcdn.net/v2/jpg/03/10/62/33/1000_F_310623324_Y19GFNUBfSxYBUrbGZjuo6P3D94sPX8n.jpg",
+            "title": "Socio-economic Impact",
+            "content": ["Community Engagement and Capacity Building",
+
+            "More than 84,000 individuals and stakeholders were engaged across the region, with 44% of participants being women, reflecting a broad reach into local communities. Additionally, more than 4,300 individuals benefited from capacity-building initiatives, with women making up 39% of participants. These programs were essential in enhancing the skills and competencies of local community members.",
+            
+            "Support for Alternative Livelihoods",
+            
+            "Through the project, over 5,200 individuals benefited through livelihood-related training, with women constituting 45% of this group. These initiatives provide new economic opportunities stemming from coastal and marine resources.",
+            
+            "Economic Empowerment",
+            
+            "ATSEA-2 supported the establishment and operation of the Tok Derek Cooperative in Manatuto, Timor-Leste, which has improved local economic development and fostered community-led business initiatives. It also facilitated private sector engagement, promoting collaboration between local government and Bank NTT to support the ongoing improvement of community groups. Additionally, the project supported business development in four villages in Rote Ndao, Indonesia, bolstering community enterprises, enhancing skills, and increasing income, and overall leading to successful ventures.",
+            
+            "Educational and Environmental Awareness Programs",
+            
+            "In collaboration with local NGOs, ATSEA-2 launched educational initiatives in schools to teach environmental conservation values at an early age. In Indonesia, activities included a sea turtle-themed colouring competition and educational lectures in Apara and Karey Village, Aru. In Timor-Leste, in partnership with the NGO PERMATIL, ATSEA-2 implemented Green School activities in five elementary schools, involving over 1,200 students. These programs aimed to enrich school meals with garden-grown produce, improve agricultural understanding, and foster an appreciation for environmental stewardship among youth."
+            ]},
+          {
+            "image": "images/bulb.png",
+            "image1": "https://as2.ftcdn.net/v2/jpg/03/10/62/33/1000_F_310623324_Y19GFNUBfSxYBUrbGZjuo6P3D94sPX8n.jpg",
+            "title": "Key Challenges",
+            "content": [ "• The project aims to restore over-exploited fisheries to more sustainable levels and supports efforts to reduce Illegal, Unregulated and Unreported fishing, directly addressing biodiversity conservation.",
+            "• TSEA-2 focuses on the conservation and restoration of marine and coastal habitats. This includes the designation of new Marine Protected Areas and habitat restoration efforts, which are crucial for maintaining ecosystem health and resilience."
+            
+            ,"• The ATS region is being suffocated by pollution from human waste, sediments and oil spills, originating from both land and sea. Coastal development has exacerbated this issue, leading to increased sediment runoff into the ocean, along with land degradation and toxic waste from mining activities."
+            
+            ,"• The combined impact of unsustainable harvesting, fisheries bycatch, habitat loss and climate change has led to a major decline – and, in some cases, loss – of biodiversity, including several key marine species."
+            
+            ,"• The destruction currently unfolding in the ATS region is the result of fossil fuel-based global energy consumption, unregulated land use and unsustainable forestry on a global scale. The project enhances the adaptive capacity of local communities and ecosystems, addressing the challenges posed by climate change."
+         ] }
+        ]
+      },
+      {
+        "type": "gallery",
+        "further-reading": "https://atsea-program.com/publication/",
+        "title": "Gallery",
+        "slides": [
+          {
+            "image": "images/atsea/gallery1.jpg",
+            "title": "Gallery Image 1",
+            "content": "Standing in his small blue boat and surrounded by mangroves in the Aru Archipelago, Indonesia, a fisher skillfully lifts his net from the water."
+          },
+          {
+            "image": "images/atsea/gallery2.jpg",
+            "title": "Gallery Image 2",
+            "content": "A fisher from Merauke, Indonesia, proudly walks along the shore, showcasing his impressive barramundi catches. "
+          },
+          {
+            "image": "images/atsea/gallery3.jpg",
+            "title": "Gallery Image 3",
+            "content": "Three women from the Merauke fishing community share a friendly conversation while seated on fishing nets, surrounded by their tools." },
+          {
+            "image": "images/atsea/gallery4.jpg",
+            "title": "Gallery Image 4",
+            "content": "Seaweed farmer in Rote Ndao, Indonesia"
+          },
+          {
+            "image": "https://www.youtube.com/embed/kRaIxWubAMM?si=4-3afWwZGEFcrRMw&autoplay=1&mute=1",
+            "title": "Gallery Video",
+            "content": "Discover the ATSEA-2 Project: Stunning aerial views and local initiatives enhancing environmental resilience and community life in the Arafura and Timor Seas."
           }
         ]
       }
