@@ -24,8 +24,10 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     window.onclick = function (event) {
         if (event.target == modal) {
-            modal.style.opacity = '0';
+            
             modal.classList.remove('show');
+            modal.classList.add('close');
+            
             var currentCenter = map.getCenter();
 
             // Remove the 'show' class to start the fade-out effect
@@ -47,8 +49,8 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     };
     span.onclick = function () {
-        modal.style.opacity = '0';
-        modal.classList.remove('show'); // Remove the 'show' class to start the fade-out effect
+        modal.classList.remove('show');
+        modal.classList.add('closeb'); // Remove the 'show' class to start the fade-out effect
         var currentCenter = map.getCenter();
         map.easeTo({
             center: currentCenter,
