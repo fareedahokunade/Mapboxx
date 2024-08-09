@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                     speed: 4,
                     duration: 3000});
     
-            },1000)
+            },2000)
 
             map.once('zoomend', function () {
                 userInteracting = false
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 speed: 4,
                 duration: 3000});
 
-        },1000)
+        },2000)
         
         userInteracting = false
 
