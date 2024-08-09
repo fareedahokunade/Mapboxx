@@ -350,7 +350,7 @@ li {
 }
 #myModal.closeb {
   animation:  popUp1 2.0s ease-out backwards;
-  display: block;
+  display: none;
   opacity: 0;
 }
 

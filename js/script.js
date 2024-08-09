@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (event.target == modal) {
             
             modal.classList.remove('show');
-            modal.classList.add('close');
+            modal.classList.add('closeb');
             
             var currentCenter = map.getCenter();
 
