@@ -345,8 +345,10 @@ li {
 
 #myModal.show {
   display: block;
-  opacity: 1;
+  
 }
+
+
 #myModal.closeb {
   animation:  popUp1 1.0s ease-out backwards;
  
