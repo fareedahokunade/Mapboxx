@@ -373,10 +373,11 @@ document.addEventListener('DOMContentLoaded', async function () {
             });
             
             setTimeout(() => {
+                modal.classList.remove('closeb');
                 iframe.src = `info.html?id=${classl}`;
                 modal.classList.add('show'); 
                 modal.style.display = "block"
-;                modal.classList.remove('closeb');
+;              
                // Add the 'show' class to trigger the fade-in effect
                 
 
