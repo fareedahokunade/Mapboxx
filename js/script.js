@@ -347,17 +347,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         
 
         map.on('click', 'markers', function (e) {
-            console.log('loaded');
-            // Access the properties of the clicked marker
-            console.log(e.features)
+          
             var coordinates = e.features[0].geometry.coordinates.slice();
             var name = e.features[0].properties["Project Name"];
-            console.log(name);
             let classl = name.replace(/\s+/g, '');
-            
-            // Ensure the popup appears over the clicked point
-
-
             locations.forEach(location => {
                 if (location.name === name) {
 
@@ -380,14 +373,15 @@ document.addEventListener('DOMContentLoaded', async function () {
             });
             
             setTimeout(() => {
+                iframe.src = `info.html?id=${classl}`;
                 modal.classList.add('show'); 
                 modal.style.display = "block"
 ;                modal.classList.remove('closeb');
                // Add the 'show' class to trigger the fade-in effect
-                iframe.src = `info.html?id=${classl}`;
+                
 
             }, 1000)
-
+            
 
 
 
@@ -461,8 +455,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             
 
             setTimeout(() => {
-                modal.classList.remove('closeb');
-                modal.classList.add('show'); // Add the 'show' class to trigger the fade-in effect
+                modal.classList.add('show'); 
+                modal.style.display = "block"
+;                modal.classList.remove('closeb');// Add the 'show' class to trigger the fade-in effect
                 iframe.src = `info.html?id=${classl}`;
                 
 

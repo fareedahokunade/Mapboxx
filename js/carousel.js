@@ -15,6 +15,7 @@ $(document).ready(function () {
     let bimage2;
     $.getJSON('content.json', function (data) {
         var content = $('#content');
+        console.log(id)
         var pages = data[id].pages;
 
         pages.forEach(function (page, index) {
