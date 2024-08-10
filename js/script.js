@@ -48,8 +48,10 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     };
     span.onclick = function () {
+      
         modal.classList.add('closeb');
         modal.style.display = "none"
+        iframe.src = 'about:blank';
         modal.classList.remove('show');
          // Remove the 'show' class to start the fade-out effect
         var currentCenter = map.getCenter();
@@ -368,10 +370,8 @@ document.addEventListener('DOMContentLoaded', async function () {
             });
             
             setTimeout(() => {
-                modal.classList.remove('closeb');
-                iframe.style.display = 'none';
                 iframe.src = `info.html?id=${classl}`;
-                iframe.style.display = 'block';
+                modal.classList.remove('closeb');
                 modal.classList.add('show'); 
                 modal.style.display = "block"
 ;              
