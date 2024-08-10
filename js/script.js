@@ -344,10 +344,7 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 
     map.on('load', function () {
-        
-
         map.on('click', 'markers', function (e) {
-          
             var coordinates = e.features[0].geometry.coordinates.slice();
             var name = e.features[0].properties["Project Name"];
             let classl = name.replace(/\s+/g, '');
@@ -357,8 +354,6 @@ document.addEventListener('DOMContentLoaded', async function () {
                 }
             });
             userInteracting = true;
-
-
             map.flyTo({
                 center: coordinates,
                 zoom: 6,
@@ -374,7 +369,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             
             setTimeout(() => {
                 modal.classList.remove('closeb');
+                iframe.style.display = 'none';
                 iframe.src = `info.html?id=${classl}`;
+                iframe.style.display = 'block';
                 modal.classList.add('show'); 
                 modal.style.display = "block"
 ;              
