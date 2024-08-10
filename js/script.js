@@ -26,6 +26,9 @@ document.addEventListener('DOMContentLoaded', async function () {
         if (event.target == modal) {
 
             modal.classList.add('closeb');
+            modal.classList.remove('show');
+            modal.style.display = "none"
+            iframe.src = 'about:blank';
             
             var currentCenter = map.getCenter();
 
@@ -48,11 +51,16 @@ document.addEventListener('DOMContentLoaded', async function () {
         }
     };
     span.onclick = function () {
-      
         modal.classList.add('closeb');
-        modal.style.display = "none"
-        iframe.src = 'about:blank';
         modal.classList.remove('show');
+        modal.style.display = "none"
+        setTimeout(()=>{
+            iframe.src = 'about:blank';
+
+        },1000
+        )
+        
+       
          // Remove the 'show' class to start the fade-out effect
         var currentCenter = map.getCenter();
         map.easeTo({
@@ -350,12 +358,9 @@ document.addEventListener('DOMContentLoaded', async function () {
             var coordinates = e.features[0].geometry.coordinates.slice();
             var name = e.features[0].properties["Project Name"];
             let classl = name.replace(/\s+/g, '');
-            locations.forEach(location => {
-                if (location.name === name) {
-
-                }
-            });
+            iframe.src = `info.html?id=${classl}`;
             userInteracting = true;
+           
             map.flyTo({
                 center: coordinates,
                 zoom: 6,
@@ -370,7 +375,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             });
             
             setTimeout(() => {
-                iframe.src = `info.html?id=${classl}`;
+                
                 modal.classList.remove('closeb');
                 modal.classList.add('show'); 
                 modal.style.display = "block"
