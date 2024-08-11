@@ -310,7 +310,7 @@ $(document).ready(function () {
                     if (slide.image.endsWith('.mp4')) {
                         newMediaElement = $('<video>', { class: 'gallery-media', controls: true }).attr('src', slide.image);
                     } 
-                    else if (slide.image.startsWith('https')  && !firstSlide.image.endsWith('.jpg')) {
+                    else if (slide.image.startsWith('https')  && !slide.image.endsWith('jpg')) {
                         console.log('youtube');
                         newMediaElement = $('<iframe>', { 
                             class: 'gallery-media', 
