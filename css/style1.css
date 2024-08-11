@@ -4,7 +4,6 @@ body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-   
     overflow-x: hidden;
     height: 100vh;
     
@@ -16,6 +15,7 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
     align-items: center;
     background-attachment: fixed;
     background-position: center;
@@ -112,7 +112,6 @@ body, html {
     display: flex;
     flex-wrap: wrap; /* Display all cards at once in a flex container */
     justify-content: space-around;
- 
     overflow-y: auto; /* Enable vertical scrolling if needed */
 }
 
@@ -387,6 +386,7 @@ body, html {
     display: flex;
     min-height: 70%;
     width: 100%;
+    overflow: hidden;
     padding-left: 10%;
     align-items: center;
     
@@ -405,7 +405,7 @@ body, html {
     min-width: 60%;
     max-width: 60%;
     height: 60vh;
-    overflow: hidden;
+    overflow: hidden ;
     position: relative;
     box-sizing: border-box;
     box-shadow:  0px 2px 2px 2px rgb(197, 225, 165, 0.2) ;
@@ -437,23 +437,33 @@ body, html {
 .gallery-card-title {
     font-size: 24px;
     margin: 0;
+    visibility: hidden;
     
     
 }
-.gallery-media{
-    
+.gallery-media {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
-.gallery-media img{
-    min-width:100vw;
-    min-height: 100vh;
+.gallery-media iframe,
+.gallery-media img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
-.gallery-media iframe{
-    width:100vw;
-    height: 100vh;
+
+.gallery-media img {
+    object-position: center; /* Centers the image */
+}
+
+.gallery-media iframe {
+    border: none; /* Removes any iframe border */
 }
 
 
