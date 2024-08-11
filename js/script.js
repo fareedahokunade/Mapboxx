@@ -358,7 +358,7 @@ document.addEventListener('DOMContentLoaded', async function () {
             var coordinates = e.features[0].geometry.coordinates.slice();
             var name = e.features[0].properties["Project Name"];
             let classl = name.replace(/\s+/g, '');
-            iframe.src = `info.html?id=${classl}`;
+          
             userInteracting = true;
            
             map.flyTo({
@@ -374,17 +374,15 @@ document.addEventListener('DOMContentLoaded', async function () {
                 essential: true
             });
             
+
             setTimeout(() => {
-                
-                modal.classList.remove('closeb');
                 modal.classList.add('show'); 
                 modal.style.display = "block"
-;              
-               // Add the 'show' class to trigger the fade-in effect
+;                modal.classList.remove('closeb');// Add the 'show' class to trigger the fade-in effect
+                iframe.src = `info.html?id=${classl}`;
                 
 
             }, 1000)
-            
 
 
 

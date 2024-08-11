@@ -15,7 +15,7 @@ $(document).ready(function () {
     let bimage2;
     $.getJSON('content.json', function (data) {
         var content = $('#content');
-        console.log(id)
+       
         var pages = data[id].pages;
 
         pages.forEach(function (page, index) {
@@ -256,10 +256,9 @@ $(document).ready(function () {
 
                 // Determine if the content is a video or image
                 if (firstSlide.image.endsWith('.mp4')) {
-                    
                     mediaElement = $('<video>', { class: 'gallery-media', autoplay: true, controls: true }).attr('src', firstSlide.image);
                 } 
-                else if (firstSlide.image.startsWith('https')) {
+                else if (firstSlide.image.startsWith('https') && !firstSlide.image.endsWith('.jpg')) {
                     mediaElement = $('<iframe>', { 
                         class: 'gallery-media', 
                         src: firstSlide.image, 
@@ -311,7 +310,7 @@ $(document).ready(function () {
                     if (slide.image.endsWith('.mp4')) {
                         newMediaElement = $('<video>', { class: 'gallery-media', controls: true }).attr('src', slide.image);
                     } 
-                    else if (slide.image.startsWith('https')) {
+                    else if (slide.image.startsWith('https')  && !firstSlide.image.endsWith('.jpg')) {
                         console.log('youtube');
                         newMediaElement = $('<iframe>', { 
                             class: 'gallery-media', 
