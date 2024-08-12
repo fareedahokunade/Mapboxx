@@ -37,7 +37,7 @@ body, html {
 .logo {
     position: fixed;
     top: 10%;
-    right: 2%;
+    right: 3%;
     width: 6%;
     height: auto;
     z-index: 9999;
@@ -57,7 +57,7 @@ body, html {
 
 
 .text-background .heading {
-    font-size:400%;
+    font-size:500%;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
@@ -89,7 +89,7 @@ body, html {
     position: relative;
     background: rgba(3, 3, 3, 1);
     color: white;
-    width: fit-content;
+    width: 40%;
     padding: 20px;
     box-sizing: border-box;
     text-align: left;
@@ -97,6 +97,9 @@ body, html {
 
 .overlay h2 {
     margin: 5px 0;
+    font-size: 100%;
+    font-weight: lighter;
+  
     text-align: center;
 
 }
@@ -130,7 +133,7 @@ body, html {
    
     margin: 20px;
     width: 15vw;
-    min-height: 62vh !important;
+    min-height: 62vh;
     max-height: 62vh;
     background: rgba(255, 255, 255, 1);
     display: flex;  
@@ -215,7 +218,7 @@ body, html {
     left: 7.5vw;
     right: 0;
     bottom: 0;
-    background: rgb(242, 242, 242, 0.9);
+    background: rgb(242, 242, 242, 1);
     z-index: 10000;
     padding: 10%;
     opacity: 0;
@@ -261,7 +264,6 @@ body, html {
     overflow: visible;
     width: auto;
     width: 40vw;
-    margin: 20px auto;
     font-family: 'Montserrat', sans-serif;
     text-align: left;
     font-size: 20px;
@@ -283,6 +285,7 @@ body, html {
 
 .zoom-info{
     margin: 5%;
+    
 }
 
 .card-zoom .close{
@@ -387,8 +390,8 @@ body, html {
     min-height: 70%;
     width: 100%;
     overflow: hidden;
-    padding-left: 10%;
     align-items: center;
+    justify-content: center;
     
     
 
@@ -401,9 +404,9 @@ body, html {
     
     /*border: 5px solid #ffffff;*/
     border-radius: 10px;
-    margin-left: 10px;
-    min-width: 60%;
-    max-width: 60%;
+   
+   
+    width: 50%;
     height: 60vh;
     overflow: hidden ;
     position: relative;
@@ -418,8 +421,8 @@ body, html {
 .gallery-content {
     flex: 1;
     max-width: 30%;
-    min-height:50%;
-    max-height: 50%;
+    min-height:20%;
+    max-height: 30%;
     padding: 20px;
     align-content: center;
     text-align: center;

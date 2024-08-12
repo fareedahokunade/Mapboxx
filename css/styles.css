@@ -9,11 +9,11 @@ body {
 
 .logo {
   position: fixed;
-  right: 2%;
+  top: 10%;
+  right: 5%;
   width: 8%;
   height: auto;
   /* Optional: add some margin */
-
   display: block;
   z-index: 999;
 
@@ -21,8 +21,8 @@ body {
 
 .logo2 {
   position: fixed;
-  top: 15%;
-  left: 7%;
+  top: 18%;
+  left: 4%;
   fill: black;
   width: 15%;
   height: auto;
@@ -47,7 +47,9 @@ body {
 
 
 .header p {
-  padding-left: 8%;
+  position: fixed;
+  left: 5%;
+  top:10%;
   font-weight: bold;
   font-size: 23px;
   color: white;
@@ -59,7 +61,7 @@ body {
 .footer {
   /* Add margin bottom */
   bottom: 10%;
-  left: 8%;
+  left: 5%;
   position: fixed;
   display: block;
   /* Use flexbox */
@@ -171,11 +173,12 @@ iframe {
 
 .search-container {
   position: fixed;
-  top: 75%;
-  right: 2%;
+  bottom: -8%;
+
+  right: 5%;
   height: 35%;
   width: 13%;
-  padding-bottom: 0;
+
   max-width: 40%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);

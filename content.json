@@ -9,6 +9,7 @@
         "title": "Amazon Basin",
         "content": "The border region between Guyana and Brazil is part of the Amazon Basin, known for its dense rainforests, rich biodiversity, and indigenous cultures. This area is critical for conservation efforts and sustainable development.",
         "details": {
+          "info": "6920 - Implementation of the Amazon Regional and National Strategic Action Programs",
           "duration": "2020 – 2026",
           "budget": ["GEF Allocation to project: USD 12 844 037"],
           "participating_countries": [
@@ -37,44 +38,46 @@
             "image": "images/window.png",
             "image1": "https://media.istockphoto.com/id/1460894232/photo/long-exposure-sunset-reflections-on-lake.webp?b=1&s=170667a&w=0&k=20&c=74-jKmr8SC1h1jeVBlq9orbesrVlK6QYQQ7m4EprL7k=",
             "title": "Overview",
-            "content": "Implementing the Strategic Action Program (SAP), promoting Integrated Water Resources Management (IWRM) and source-to-sea approaches, to improve ecological, social and economic benefits and, enabling the countries to meet their relevant SDG and convention targets in the Amazon basin"
-          },
+            "content": ["Implementing the Strategic Action Program (SAP), promoting Integrated Water Resources Management (IWRM) and source-to-sea approaches, to improve ecological, social and economic benefits and, enabling the countries to meet their relevant SDG and convention targets in the Amazon basin"
+        ]},
           {
-            "image": "images/bullseye.png",
+            "image": "images/Objective-01.svg",
             "image1": "https://media.istockphoto.com/id/1460894232/photo/long-exposure-sunset-reflections-on-lake.webp?b=1&s=170667a&w=0&k=20&c=74-jKmr8SC1h1jeVBlq9orbesrVlK6QYQQ7m4EprL7k=",
             "title": "Objective",
             "content": "Implementing the Strategic Action Program (SAP), promoting Integrated Water Resources Management (IWRM) and source-to-sea approaches, to improve ecological, social and economic benefits and, enabling the countries to meet their relevant SDG and convention targets in the Amazon basin"
           },
           {
-            "image": "images/effort.png",
-            "image1": "https://landofsize.com/wp-content/uploads/2018/03/istock-643123304.jpg",
-            "title": "Challenges and Lesson Learned",
-            "content": [
-              "Based on the consolidated institutional structure for project execution in the Member Countries, through the 8 National Project Coordination Units, and at the regional level, with the Regional Project Coordination Unit fully established in the SP/ACTO, the Project advanced in the execution of regional and national activities with significant results.",
-              "1. At the regional level, the creation of the Amazonian Network of Water Authorities (ANWA/RADA-ACTO) laid the groundwork for the establishment of a permanent mechanism for coordination, cooperation and exchange for integrated water management in the Amazon Region. ANWA/RADA received support at the highest political level as part of the Belém Declaration signed at the IV Meeting of the Presidents of the States Parties to the Amazon Cooperation Treaty (August 8, 2023). The Declaration also channeled the agreement of the Member Countries on strengthening the institutional role of ACTO with specific mandates related to the management and monitoring of water resources, among others. In sequence, the 8 Foreign Ministers of ACTO Member Countries signed Ministerial Resolution RES/XIV MRE-ACTO/19 institutionalizing ANWA/RADA within the framework of ACTO and convening the first meeting of the Network in 2024.",
-              "2. The holding of the National SAP Implementation Workshops increased awareness, mobilization and participation of key national stakeholders in the implementation of the Strategic Action Program (SAP), reaching a new level of multi-sectoral engagement and paving the way for the formulation of the National Action Plans (NAPs) and their implementation at the national planning level and the implementation of water and environmental policies in the Amazon Basin.",
-              "3. A highlight in national capacity building was the training on gender mainstreaming in the planning and implementation of IWRM and SAP projects, programs and policies. ",
-              "4. The Project provided valuable space for technical and political dialogue between and with the countries, as more than 125 meetings were organized and held, including a CSP meeting, a high level regional meeting of Water Authorities, 3 regional technical workshops, 2 regional technical meetings with National Coordinators, 6 National SAP Workshops, 7 training courses on gender mainstreaming in IWRM projects and policies, bilateral meetings with UNCPs and National Focal Points, regular working group meetings on specific topics/interventions and coordination meetings with project partners and agencies. In total, the project has prepared terms of reference and has selected and contracted 50 consultants and institutions. The main challenge of the Project is to initiate the implementation of the remaining national activities and to advance in the implementation of the regional activities aimed at the implementation of an institutional and policy framework at the basin level for IWRM and an integrated monitoring and reporting system for water resources and the environment in the Amazon region. In general, the start of project activities has been delayed due to the prolongation of the Initial Phase and taking into account the political and institutional changes in ACTO Member Countries and the health crisis caused by Covid-19. In this regard, an extension of the project is recommended to allow for the completion and delivery of all activities and expected results."
-            ]
+            "image": "images/Key Challenge-01.svg",
+            "image1": "https://as2.ftcdn.net/v2/jpg/03/10/62/33/1000_F_310623324_Y19GFNUBfSxYBUrbGZjuo6P3D94sPX8n.jpg",
+            "title": "Key-Challenges",
+            "content": "7.5 million people (at least 40% are women) strengthened in the face of extreme hydroclimatic events (interventions). > 7.8 million people benefit from the project's activities, which corresponds to 20% of the population of the Basin (at least 40% women). Financial strategy adopted and implemented, and 8 National Action Plans developed and approved. > 1,400 trained professionals / > 10,000 members of the local communities trained (at least 40% are women)."
           },
+          
           {
-            "image": "images/water.png",
+            "image": "images/Water impact-01.svg",
             "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLAy_kTvW2uVanGdwQZQrW5Rk6BY7VnAsKiylPWXuOV-Q7RoBti5o1bDSVAvllW9YmKGU&usqp=CAU",
             "title": "Water Resource Impact",
             "content": ["A Permanent Regional IWRM Coordination Mechanism for the Amazon Basin was established in ACTO. 600,000,000 ha of area covered by the integrated environmental monitoring system."
         ]},
           {
-            "image": "images/financial.png",
+            "image": "images/Economic-01.svg",
             "image1": "https://as2.ftcdn.net/v2/jpg/03/10/62/33/1000_F_310623324_Y19GFNUBfSxYBUrbGZjuo6P3D94sPX8n.jpg",
             "title": "Socio-economic Impact",
             "content": ["7.5 million people (at least 40% are women) strengthened in the face of extreme hydroclimatic events (interventions). > 7.8 million people benefit from the project's activities, which corresponds to 20% of the population of the Basin (at least 40% women). Financial strategy adopted and implemented, and 8 National Action Plans developed and approved. > 1,400 trained professionals / > 10,000 members of the local communities trained (at least 40% are women)."
         ]},
-          {
-            "image": "images/bulb.png",
-            "image1": "https://as2.ftcdn.net/v2/jpg/03/10/62/33/1000_F_310623324_Y19GFNUBfSxYBUrbGZjuo6P3D94sPX8n.jpg",
-            "title": "Key-Challenges",
-            "content": "7.5 million people (at least 40% are women) strengthened in the face of extreme hydroclimatic events (interventions). > 7.8 million people benefit from the project's activities, which corresponds to 20% of the population of the Basin (at least 40% women). Financial strategy adopted and implemented, and 8 National Action Plans developed and approved. > 1,400 trained professionals / > 10,000 members of the local communities trained (at least 40% are women)."
-          }
+        {
+          "image": "images/Challenges and Lessons-01.svg",
+          "image1": "https://landofsize.com/wp-content/uploads/2018/03/istock-643123304.jpg",
+          "title": "Challenges and Lesson Learned",
+          "content": [
+            "Based on the consolidated institutional structure for project execution in the Member Countries, through the 8 National Project Coordination Units, and at the regional level, with the Regional Project Coordination Unit fully established in the SP/ACTO, the Project advanced in the execution of regional and national activities with significant results.",
+            "1. At the regional level, the creation of the Amazonian Network of Water Authorities (ANWA/RADA-ACTO) laid the groundwork for the establishment of a permanent mechanism for coordination, cooperation and exchange for integrated water management in the Amazon Region. ANWA/RADA received support at the highest political level as part of the Belém Declaration signed at the IV Meeting of the Presidents of the States Parties to the Amazon Cooperation Treaty (August 8, 2023). The Declaration also channeled the agreement of the Member Countries on strengthening the institutional role of ACTO with specific mandates related to the management and monitoring of water resources, among others. In sequence, the 8 Foreign Ministers of ACTO Member Countries signed Ministerial Resolution RES/XIV MRE-ACTO/19 institutionalizing ANWA/RADA within the framework of ACTO and convening the first meeting of the Network in 2024.",
+            "2. The holding of the National SAP Implementation Workshops increased awareness, mobilization and participation of key national stakeholders in the implementation of the Strategic Action Program (SAP), reaching a new level of multi-sectoral engagement and paving the way for the formulation of the National Action Plans (NAPs) and their implementation at the national planning level and the implementation of water and environmental policies in the Amazon Basin.",
+            "3. A highlight in national capacity building was the training on gender mainstreaming in the planning and implementation of IWRM and SAP projects, programs and policies. ",
+            "4. The Project provided valuable space for technical and political dialogue between and with the countries, as more than 125 meetings were organized and held, including a CSP meeting, a high level regional meeting of Water Authorities, 3 regional technical workshops, 2 regional technical meetings with National Coordinators, 6 National SAP Workshops, 7 training courses on gender mainstreaming in IWRM projects and policies, bilateral meetings with UNCPs and National Focal Points, regular working group meetings on specific topics/interventions and coordination meetings with project partners and agencies. In total, the project has prepared terms of reference and has selected and contracted 50 consultants and institutions. The main challenge of the Project is to initiate the implementation of the remaining national activities and to advance in the implementation of the regional activities aimed at the implementation of an institutional and policy framework at the basin level for IWRM and an integrated monitoring and reporting system for water resources and the environment in the Amazon region. In general, the start of project activities has been delayed due to the prolongation of the Initial Phase and taking into account the political and institutional changes in ACTO Member Countries and the health crisis caused by Covid-19. In this regard, an extension of the project is recommended to allow for the completion and delivery of all activities and expected results."
+          ]
+        }
+          
         ]
       },
       {
@@ -110,20 +113,8 @@
         "background3": "images/bg2.png",
         "title": "Arafura and Timor Seas",
          "details": {
-          "duration": "2020 – 2026",
-          "budget": ["GEF allocation to project: USD$ 9,745,662"," Total co-financing: USD$ 60,201,173 "],
-          "participating_countries": [
-            "Australia",
-            "Indonesia",
-            "Papua New Guinea",
-            "Timor-Leste" 
-          ],
-          "implementing_agencies": [
-            "United Nations Development Programme"
-          ],
-          "executing_agencies":[ "UNDP Indonesia",
-          "UNDP Timor-Leste",
-          "PEMSEA Resource Facility"]
+          "info": "6920 - Implementation of the Arafura and Timor Seas Regional and National Strategic Action Programs",
+          "duration": "2020 – 2026" 
         }
       },
       {
@@ -134,31 +125,39 @@
             "image": "images/window.png",
             "image1": "https://media.istockphoto.com/id/1460894232/photo/long-exposure-sunset-reflections-on-lake.webp?b=1&s=170667a&w=0&k=20&c=74-jKmr8SC1h1jeVBlq9orbesrVlK6QYQQ7m4EprL7k=",
             "title": "Overview",
-            "content": "Implementing the Strategic Action Program (SAP), promoting Integrated Water Resources Management (IWRM) and source-to-sea approaches, to improve ecological, social and economic benefits and, enabling the countries to meet their relevant SDG and convention targets in the Amazon basin"
-          },
+            "content": ["Budget",
+            "GEF allocation to project: USD$ 9,745,662 \nTotal co-financing: USD$ 60,201,173", 
+            "Participating countries",
+            "Australia,Indonesia,Papua New Guinea,Timor-Leste",
+            "Implementing Agencies", 
+            "United Nations Development Programme",
+            "Executing Agencies",
+            "UNDP Indonesia , UNDP Timor-Leste, PEMSEA Resource Facility"
+          ]
+        },
           {
-            "image": "images/bullseye.png",
+            "image": "images/Objective-01.svg",
             "image1": "https://media.istockphoto.com/id/1460894232/photo/long-exposure-sunset-reflections-on-lake.webp?b=1&s=170667a&w=0&k=20&c=74-jKmr8SC1h1jeVBlq9orbesrVlK6QYQQ7m4EprL7k=",
             "title": "Objective",
             "content": "To enhance sustainable development in the Arafura and Timor Seas (ATS) region and improve the quality of life of its inhabitants through a combination of restoration, conservation, and sustainable management of marine-coastal ecosystems. \n\n This initiative targets the conservation of ecosystem biodiversity and the integrated, sustainable management of resources. The project is divided into environmental objectives—supporting sustainable fisheries, restoring habitats, protecting marine species, reducing pollution, and adapting to climate change—and governance objectives - strengthening regional governance and supporting transboundary governance strategies that align with national priorities."
             
             },
             {
-            "image": "images/effort.png",
-            "image1": "https://landofsize.com/wp-content/uploads/2018/03/istock-643123304.jpg",
-            "title": "Challenges and Lesson Learned",
-            "content": [
-              "Adaptability to External Challenges",
-              "The ATSEA-2 project faced significant disruptions from COVID-19, natural disasters, and political changes, affecting schedules, safety protocols, and resource allocation. To mitigate these issues in the future, efforts should be made to enhance flexibility in project planning, improve disaster preparedness, and adapt to political landscapes through regular engagement with government agencies and stakeholders.",
-              "Resource Management and Accessibility",
-              "Remote project locations with limited access and facilities posed logistical challenges, and budget management issues arose from unused allocations and financial mismatches. To address these challenges, it is essential to prioritise robust financial management, including proactive budget adjustments and reallocations. Additionally, extending outreach and infrastructure support to remote areas will ensure more effective project implementation."
-            ,"Communication and Coordination Efficiency <br>",
-            "Difficulties in scheduling, language barriers and a lack of experience in reporting compromised effective communication and documentation.  Accordingly, it is recommended to implement advanced notification systems for meetings, utilise hybrid formats to accommodate diverse schedules, and enhance support for local partners in reporting to improve documentation quality."
-
-            ]
-          },
+              "image": "images/Key Challenge-01.svg",
+              "image1": "https://as2.ftcdn.net/v2/jpg/03/10/62/33/1000_F_310623324_Y19GFNUBfSxYBUrbGZjuo6P3D94sPX8n.jpg",
+              "title": "Key Challenges",
+              "content": [ "• The project aims to restore over-exploited fisheries to more sustainable levels and supports efforts to reduce Illegal, Unregulated and Unreported fishing, directly addressing biodiversity conservation.",
+              "• TSEA-2 focuses on the conservation and restoration of marine and coastal habitats. This includes the designation of new Marine Protected Areas and habitat restoration efforts, which are crucial for maintaining ecosystem health and resilience."
+              
+              ,"• The ATS region is being suffocated by pollution from human waste, sediments and oil spills, originating from both land and sea. Coastal development has exacerbated this issue, leading to increased sediment runoff into the ocean, along with land degradation and toxic waste from mining activities."
+              
+              ,"• The combined impact of unsustainable harvesting, fisheries bycatch, habitat loss and climate change has led to a major decline – and, in some cases, loss – of biodiversity, including several key marine species."
+              
+              ,"• The destruction currently unfolding in the ATS region is the result of fossil fuel-based global energy consumption, unregulated land use and unsustainable forestry on a global scale. The project enhances the adaptive capacity of local communities and ecosystems, addressing the challenges posed by climate change."
+           ] },
+            
           {
-            "image": "images/water.png",
+            "image": "images/Water impact-01.svg",
             "image1": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLAy_kTvW2uVanGdwQZQrW5Rk6BY7VnAsKiylPWXuOV-Q7RoBti5o1bDSVAvllW9YmKGU&usqp=CAU",
             "title": "Water Resource Impact",
             "content":[ "Policy and Regional Plans",
@@ -180,7 +179,7 @@
           ]
           },
           {
-            "image": "images/financial.png",
+            "image": "images/Economic-01.svg",
             "image1": "https://as2.ftcdn.net/v2/jpg/03/10/62/33/1000_F_310623324_Y19GFNUBfSxYBUrbGZjuo6P3D94sPX8n.jpg",
             "title": "Socio-economic Impact",
             "content": ["Community Engagement and Capacity Building",
@@ -199,19 +198,21 @@
             
             "In collaboration with local NGOs, ATSEA-2 launched educational initiatives in schools to teach environmental conservation values at an early age. In Indonesia, activities included a sea turtle-themed colouring competition and educational lectures in Apara and Karey Village, Aru. In Timor-Leste, in partnership with the NGO PERMATIL, ATSEA-2 implemented Green School activities in five elementary schools, involving over 1,200 students. These programs aimed to enrich school meals with garden-grown produce, improve agricultural understanding, and foster an appreciation for environmental stewardship among youth."
             ]},
-          {
-            "image": "images/bulb.png",
-            "image1": "https://as2.ftcdn.net/v2/jpg/03/10/62/33/1000_F_310623324_Y19GFNUBfSxYBUrbGZjuo6P3D94sPX8n.jpg",
-            "title": "Key Challenges",
-            "content": [ "• The project aims to restore over-exploited fisheries to more sustainable levels and supports efforts to reduce Illegal, Unregulated and Unreported fishing, directly addressing biodiversity conservation.",
-            "• TSEA-2 focuses on the conservation and restoration of marine and coastal habitats. This includes the designation of new Marine Protected Areas and habitat restoration efforts, which are crucial for maintaining ecosystem health and resilience."
-            
-            ,"• The ATS region is being suffocated by pollution from human waste, sediments and oil spills, originating from both land and sea. Coastal development has exacerbated this issue, leading to increased sediment runoff into the ocean, along with land degradation and toxic waste from mining activities."
-            
-            ,"• The combined impact of unsustainable harvesting, fisheries bycatch, habitat loss and climate change has led to a major decline – and, in some cases, loss – of biodiversity, including several key marine species."
-            
-            ,"• The destruction currently unfolding in the ATS region is the result of fossil fuel-based global energy consumption, unregulated land use and unsustainable forestry on a global scale. The project enhances the adaptive capacity of local communities and ecosystems, addressing the challenges posed by climate change."
-         ] }
+            {
+              "image": "images/Challenges and Lessons-01.svg",
+              "image1": "https://landofsize.com/wp-content/uploads/2018/03/istock-643123304.jpg",
+              "title": "Challenges and Lesson Learned",
+              "content": [
+                "Adaptability to External Challenges",
+                "The ATSEA-2 project faced significant disruptions from COVID-19, natural disasters, and political changes, affecting schedules, safety protocols, and resource allocation. To mitigate these issues in the future, efforts should be made to enhance flexibility in project planning, improve disaster preparedness, and adapt to political landscapes through regular engagement with government agencies and stakeholders.",
+                "Resource Management and Accessibility",
+                "Remote project locations with limited access and facilities posed logistical challenges, and budget management issues arose from unused allocations and financial mismatches. To address these challenges, it is essential to prioritise robust financial management, including proactive budget adjustments and reallocations. Additionally, extending outreach and infrastructure support to remote areas will ensure more effective project implementation."
+              ,"Communication and Coordination Efficiency ",
+              "Difficulties in scheduling, language barriers and a lack of experience in reporting compromised effective communication and documentation.  Accordingly, it is recommended to implement advanced notification systems for meetings, utilise hybrid formats to accommodate diverse schedules, and enhance support for local partners in reporting to improve documentation quality."
+  
+              ]
+            }
+         
         ]
       },
       {

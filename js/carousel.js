@@ -29,18 +29,14 @@ $(document).ready(function () {
                 bimage = page.background2;
                 bimage2 = page.background3;
                 var title = $('<h1 class="heading">').text(page.title);
-                var paragraph = $('<p class="paragraph">').text(page.content);
+               
 
                 // Create the overlay for project details
                 var overlay = $('<div>', { class: 'overlay' });
                 var duration = $('<h2>').text('' + page.details.duration);
-               
-                var budget = $('<p>').html(page.details.budget.join('<br>'));                
-                var countries = $('<p>').text('Participating Countries: ' + page.details.participating_countries.join(', '));
-                var agencies = $('<p>').text('Implementing Agencies: ' + page.details.implementing_agencies.join(', '));
-                var executing = $('<p>').text('Executing Agencies: ' + page.details.executing_agencies.join(', '));
-
-                overlay.append(duration, budget, countries, agencies, executing);
+                var info = $('<h2>').text('' + page.details.info);
+                
+                overlay.append(info,duration);
                 textBackground.append(title, overlay);
                 textPage.append(textBackground);
                 content.append(textPage);
@@ -70,8 +66,10 @@ $(document).ready(function () {
                     } else if (slide.title === "Key Challenges") {
                         // Create a div to hold the content
                         cardContent = $('<p>', { class: 'card-content' }).text(''+ slide.content.join('\n\n'));
+
                         
                     }
+                    
                     else {
                         cardContent = $('<p>', { class: 'card-content' }).text(slide.content);
                     }
@@ -112,19 +110,65 @@ $(document).ready(function () {
                     var zoomTitle = $('<h2>', { class: 'card-title' }).text(slide.title);
                     var zoomContent;
                     if (slide.title === "Challenges and Lesson Learned") {
-                        zoomContent = $('<p>', { class: 'card-content' }).html(slide.content.join('\n\n'));
-
+                         // Create a div to hold the content
+                         zoomContent = $('<div>', { class: 'card-content' });
+                    
+                         // Process the content
+                         let formattedContent = slide.content.map((item, index) => {
+                             if (index % 2 !== 1) {
+                                 return '<strong>' + item + '</strong>';
+                             }
+                             return item;
+                         }).join('\n\n');
+                         
+                         zoomContent.html(formattedContent);
                     }
                     else if (slide.title === "Key Challenges") {
                         zoomContent = $('<p>', { class: 'card-content' }).html(slide.content.join('\n\n'));
 
                     }
                     else if ( slide.title === "Water Resource Impact") {
-                        zoomContent = $('<p>', { class: 'card-content' }).html(slide.content.join('\n\n'));
+                         // Create a div to hold the content
+                         zoomContent = $('<div>', { class: 'card-content' });
+                    
+                         // Process the content
+                         let formattedContent = slide.content.map((item, index) => {
+                             if (index % 2 !== 1) {
+                                 return '<strong>' + item + '</strong>';
+                             }
+                             return item;
+                         }).join('\n\n');
+                         
+                         zoomContent.html(formattedContent);
 
                     }
+                    else if (slide.title === "Overview") {
+                        // Create a div to hold the content
+                        zoomContent = $('<div>', { class: 'card-content' });
+                    
+                    // Process the content
+                    let formattedContent = slide.content.map((item, index) => {
+                        if (index % 2 !== 1) {
+                            return '<strong>' + item + '</strong>';
+                        }
+                        return item;
+                    }).join('\n\n');
+                    
+                    zoomContent.html(formattedContent);
+                }
                     else if ( slide.title === "Socio-economic Impact") {
-                        zoomContent = $('<p>', { class: 'card-content' }).html(slide.content.join('\n\n'));
+                         // Create a div to hold the content
+                         zoomContent = $('<div>', { class: 'card-content' });
+                    
+                         // Process the content
+                         let formattedContent = slide.content.map((item, index) => {
+                             if (index % 2 !== 1) {
+                                 return '<strong>' + item + '</strong>';
+                             }
+                             return item;
+                         }).join('\n\n');
+                         
+                         zoomContent.html(formattedContent);
 
                     }
                    
@@ -175,16 +219,62 @@ $(document).ready(function () {
 
                     var zoomContent;
                     if (slide.title === "Challenges and Lesson Learned") {
-                        zoomContent = slide.content.join('\n\n');
+                        zoomContent = $('<div>', { class: 'card-content' });
+                    
+                        // Process the content
+                        let formattedContent = slide.content.map((item, index) => {
+                            if (index % 2 !== 1) {
+                                return '<strong>' + item + '</strong>';
+                            }
+                            return item;
+                        }).join('\n\n');
+                        
+                        zoomContent = zoomContent.html(formattedContent);
                     } else if (slide.title === "Key Challenges") {
                             zoomContent = slide.content.join('\n\n');
                             
+                            
                  } else if (slide.title === "Water Resource Impact") {
-                        zoomContent = slide.content.join('\n\n');
+                    zoomContent = $('<div>', { class: 'card-content' });
+                    
+                    // Process the content
+                    let formattedContent = slide.content.map((item, index) => {
+                        if (index % 2 !== 1) {
+                            return '<strong>' + item + '</strong>';
+                        }
+                        return item;
+                    }).join('\n\n');
+                    
+                    zoomContent = zoomContent.html(formattedContent);
                         
                 } 
+                else if (slide.title === "Overview") {
+                    // Create a div to hold the content
+                    zoomContent = $('<div>', { class: 'card-content' });
+                    
+                         // Process the content
+                         let formattedContent = slide.content.map((item, index) => {
+                             if (index % 2 !== 1) {
+                                 return '<strong>' + item + '</strong>';
+                             }
+                             return item;
+                         }).join('\n\n');
+                         
+                         zoomContent = zoomContent.html(formattedContent);
+                
+            }
                 else if (slide.title === "Socio-economic Impact") {
-                    zoomContent = slide.content.join('\n\n');
+                    zoomContent = $('<div>', { class: 'card-content' });
+                    
+                    // Process the content
+                    let formattedContent = slide.content.map((item, index) => {
+                        if (index % 2 !== 1) {
+                            return '<strong>' + item + '</strong>';
+                        }
+                        return item;
+                    }).join('\n\n');
+                    
+                    zoomContent = zoomContent.html(formattedContent);
                     
             } 
                     else {
@@ -278,7 +368,7 @@ $(document).ready(function () {
                 var cardContent = $('<p>', { class: 'gallery-card-content' }).text(firstSlide.content);
 
                 galleryCard.append(mediaElement);
-                galleryContent.append(cardTitle, cardContent);
+                galleryContent.append(cardContent);
                 galleryContainer.append(galleryCard, galleryContent);
                 galleryPage.append(galleryHeading, line, galleryInfo, galleryContainer);
 
